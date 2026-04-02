@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './App';
-import './index.css'; // Importação crítica para o build funcionar
+import App from '@/App';
+import '@/index.css'; // Importação crítica para o build funcionar
 
 console.log("SANCHO App starting...");
 const rootElement = document.getElementById('root');
