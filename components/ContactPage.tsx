@@ -74,7 +74,7 @@ const ContactPage: React.FC = () => {
           <div className="absolute inset-0 bg-gradient-to-t from-sancho-primary to-transparent"></div>
         </div>
         <div className="relative z-10 text-center px-4 pt-8 animate-fade-in-up">
-          <h1 className="text-3xl md:text-4xl font-extrabold text-white mb-4 drop-shadow-xl">
+          <h1 className="text-2xl md:text-3xl font-extrabold text-white mb-4 drop-shadow-xl">
             Entre em Contacto
           </h1>
           <p className="text-base md:text-lg text-sancho-yellow font-bold tracking-wide max-w-2xl mx-auto">
@@ -154,7 +154,7 @@ const ContactPage: React.FC = () => {
               <div className="w-16 h-16 bg-sancho-yellow rounded-full flex items-center justify-center mb-6 shadow-lg shadow-sancho-yellow/30 text-sancho-primary group-hover:scale-110 group-hover:rotate-12 transition-transform duration-300">
                 {item.icon}
               </div>
-              <h3 className="text-xl font-bold text-sancho-primary mb-4 group-hover:text-sancho-accent transition-colors">{item.title}</h3>
+              <h3 className="text-lg font-bold text-sancho-primary mb-4 group-hover:text-sancho-accent transition-colors">{item.title}</h3>
               <div className="text-slate-600 font-medium space-y-1 group-hover:text-slate-800 w-full">
                 {item.content}
               </div>
@@ -173,7 +173,7 @@ const ContactPage: React.FC = () => {
             <div className="opacity-0 translate-y-8 animate-on-scroll bg-slate-50 p-8 rounded-3xl border border-slate-100 shadow-lg">
               <div className="mb-8">
                 <span className="text-sancho-accent font-bold uppercase tracking-widest text-xs mb-2 block">Fale Conosco</span>
-                <h2 className="text-3xl font-bold text-sancho-primary mb-4">Envie uma Mensagem</h2>
+                <h2 className="text-2xl font-bold text-sancho-primary mb-4">Envie uma Mensagem</h2>
                 <p className="text-slate-600">Preencha o formulário abaixo e nossa equipe entrará em contato o mais breve possível.</p>
               </div>
               

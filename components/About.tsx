@@ -45,7 +45,7 @@ const About: React.FC = () => {
           <div className="absolute inset-0 bg-gradient-to-t from-sancho-primary to-transparent opacity-60"></div>
         </div>
         <div className="relative z-10 text-center px-4 animate-fade-in-up">
-          <h1 className="text-3xl md:text-4xl font-extrabold text-white mb-6 drop-shadow-2xl">
+          <h1 className="text-2xl md:text-3xl font-extrabold text-white mb-6 drop-shadow-2xl">
             Sobre a SANCHO
           </h1>
           <div className="w-24 h-2 bg-sancho-yellow mx-auto rounded-full mb-6"></div>
@@ -65,7 +65,7 @@ const About: React.FC = () => {
               <span className="inline-block px-4 py-2 bg-sancho-yellow/20 text-sancho-yellow-hover rounded-full text-sm font-bold uppercase tracking-wider mb-6">
                 Nossa História
               </span>
-              <h2 className="text-2xl md:text-3xl font-extrabold text-sancho-primary mb-6 leading-tight">
+              <h2 className="text-xl md:text-2xl font-extrabold text-sancho-primary mb-6 leading-tight">
                 Construindo o Futuro com <span className="text-sancho-accent">Qualidade</span> e <span className="text-sancho-yellow">Confiança</span>
               </h2>
               
@@ -138,7 +138,7 @@ const About: React.FC = () => {
                     <div className="w-16 h-16 bg-sancho-primary/10 rounded-2xl flex items-center justify-center text-sancho-primary mb-6">
                         <Target size={32} />
                     </div>
-                    <h3 className="text-2xl font-bold text-sancho-primary mb-4">Nossa Missão</h3>
+                    <h3 className="text-xl font-bold text-sancho-primary mb-4">Nossa Missão</h3>
                     <p className="text-slate-600 text-lg leading-relaxed">
                         Fornecer equipamentos de alta qualidade e soluções logísticas integradas que impulsionem o crescimento de Moçambique, garantindo eficiência, sustentabilidade e o sucesso dos projetos dos nossos clientes.
                     </p>
@@ -148,7 +148,7 @@ const About: React.FC = () => {
                     <div className="w-16 h-16 bg-sancho-accent/10 rounded-2xl flex items-center justify-center text-sancho-accent mb-6">
                         <Eye size={32} />
                     </div>
-                    <h3 className="text-2xl font-bold text-sancho-primary mb-4">Nossa Visão</h3>
+                    <h3 className="text-xl font-bold text-sancho-primary mb-4">Nossa Visão</h3>
                     <p className="text-slate-600 text-lg leading-relaxed">
                         Ser a referência líder em importação e exportação na África Austral, reconhecida pela excelência no atendimento, integridade nas relações e inovação nas soluções de fornecimento industrial.
                     </p>
@@ -161,7 +161,7 @@ const About: React.FC = () => {
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16 opacity-0 translate-y-8 animate-on-scroll">
-                <h2 className="text-xl md:text-2xl font-extrabold text-sancho-primary mb-4">Nossos Valores</h2>
+                <h2 className="text-lg md:text-xl font-extrabold text-sancho-primary mb-4">Nossos Valores</h2>
                 <div className="w-20 h-1.5 bg-sancho-yellow mx-auto rounded-full"></div>
             </div>
 
@@ -175,7 +175,7 @@ const About: React.FC = () => {
                         <div className="w-16 h-16 mx-auto bg-white rounded-full shadow-sm flex items-center justify-center mb-6">
                             {val.icon}
                         </div>
-                        <h4 className="text-xl font-bold text-sancho-primary mb-3">{val.title}</h4>
+                        <h4 className="text-lg font-bold text-sancho-primary mb-3">{val.title}</h4>
                         <p className="text-slate-600">{val.description}</p>
                     </div>
                 ))}
@@ -187,7 +187,7 @@ const About: React.FC = () => {
       <section className="py-24 bg-sancho-primary relative overflow-hidden">
         <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10"></div>
         <div className="max-w-4xl mx-auto px-4 text-center relative z-10 opacity-0 translate-y-8 animate-on-scroll">
-           <h2 className="text-2xl md:text-3xl font-extrabold text-white mb-8">Pronto para começar?</h2>
+           <h2 className="text-xl md:text-2xl font-extrabold text-white mb-8">Pronto para começar?</h2>
            <p className="text-lg text-blue-100 mb-10 font-light">
              Entre em contato com nossa equipe e descubra como podemos ajudar a alavancar seu negócio com as melhores soluções do mercado.
            </p>

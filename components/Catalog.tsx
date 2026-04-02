@@ -38,7 +38,7 @@ const Catalog: React.FC = () => {
           <div key={category.id} className="mb-20 last:mb-0">
             {/* Category Header */}
             <div className="text-center mb-10 opacity-0 translate-y-8 animate-on-scroll">
-               <h2 className="text-3xl md:text-4xl font-extrabold text-sancho-primary mb-3">{category.title}</h2>
+               <h2 className="text-2xl md:text-3xl font-extrabold text-sancho-primary mb-3">{category.title}</h2>
                <div className="w-16 h-1 bg-sancho-accent mx-auto rounded-full mb-4"></div>
                <p className="text-slate-600 text-base max-w-2xl mx-auto">{category.description}</p>
             </div>
@@ -65,7 +65,7 @@ const Catalog: React.FC = () => {
                         className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
                        />
                        <div className="absolute inset-0 bg-gradient-to-t from-sancho-primary/80 to-transparent opacity-80 pointer-events-none"></div>
-                       <h3 className="absolute bottom-2 left-4 right-4 text-white text-base font-bold drop-shadow-md z-10 group-hover:text-sancho-accent transition-colors leading-tight line-clamp-2">{item.name}</h3>
+                       <h3 className="absolute bottom-2 left-4 right-4 text-white text-sm font-bold drop-shadow-md z-10 group-hover:text-sancho-accent transition-colors leading-tight line-clamp-2">{item.name}</h3>
                      </Link>
                   </div>
 

@@ -50,7 +50,7 @@ const FAQPage: React.FC = () => {
           <div className="absolute inset-0 bg-gradient-to-t from-sancho-primary to-transparent"></div>
         </div>
         <div className="relative z-10 text-center px-4 pt-8 animate-fade-in-up">
-          <h1 className="text-3xl md:text-4xl font-extrabold text-white mb-4 drop-shadow-xl">
+          <h1 className="text-2xl md:text-3xl font-extrabold text-white mb-4 drop-shadow-xl">
             Perguntas Frequentes
           </h1>
           <p className="text-base md:text-lg text-sancho-yellow font-bold tracking-wide max-w-2xl mx-auto">
@@ -101,7 +101,7 @@ const FAQPage: React.FC = () => {
             <div className="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center mx-auto mb-6 text-sancho-yellow">
                 <HelpCircle size={32} />
             </div>
-            <h2 className="text-xl md:text-2xl font-extrabold text-white mb-6">
+            <h2 className="text-lg md:text-xl font-extrabold text-white mb-6">
                 Ainda tem dúvidas?
             </h2>
             <p className="text-blue-100 text-lg mb-10 max-w-2xl mx-auto">

@@ -60,7 +60,7 @@ const Contact: React.FC = () => {
     <section id="contact" className="py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16 opacity-0 translate-y-8 animate-on-scroll">
-          <h2 className="text-3xl md:text-4xl font-bold text-sancho-secondary mb-4 tracking-tight">Entre em Contato</h2>
+          <h2 className="text-2xl md:text-3xl font-bold text-sancho-secondary mb-4 tracking-tight">Entre em Contato</h2>
           <div className="w-24 h-1.5 bg-sancho-accent mx-auto rounded-full"></div>
           <p className="mt-6 text-slate-600 font-light text-lg">
             Estamos prontos para atender sua solicitação com agilidade e excelência.
@@ -74,7 +74,7 @@ const Contact: React.FC = () => {
                <div className="absolute top-0 right-0 w-40 h-40 bg-sancho-accent/20 rounded-full -mr-16 -mt-16 blur-2xl"></div>
                <div className="absolute bottom-0 left-0 w-32 h-32 bg-sancho-yellow/10 rounded-full -ml-10 -mb-10 blur-xl"></div>
               
-              <h3 className="text-2xl font-bold mb-8 text-white tracking-wide border-b border-sancho-accent/30 pb-4 inline-block relative z-10">
+              <h3 className="text-xl font-bold mb-8 text-white tracking-wide border-b border-sancho-accent/30 pb-4 inline-block relative z-10">
                 Informações de Contato
               </h3>
               

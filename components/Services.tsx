@@ -28,7 +28,7 @@ const Services: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12 opacity-0 translate-y-8 animate-on-scroll">
           <span className="bg-sancho-accent/10 text-sancho-accent px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider">Nossos Serviços</span>
-          <h2 className="text-3xl md:text-4xl font-extrabold text-sancho-primary mt-4 mb-3">O Que Fazemos</h2>
+          <h2 className="text-2xl md:text-3xl font-extrabold text-sancho-primary mt-4 mb-3">O Que Fazemos</h2>
           <p className="mt-2 text-slate-500 max-w-2xl mx-auto text-base">
             Soluções completas para todas as suas necessidades em equipamentos e logística
           </p>
@@ -48,7 +48,7 @@ const Services: React.FC = () => {
                 </div>
               </div>
 
-              <h3 className="text-base font-bold text-sancho-primary mb-1 min-h-[24px] flex items-center justify-center leading-tight">
+              <h3 className="text-sm font-bold text-sancho-primary mb-1 min-h-[24px] flex items-center justify-center leading-tight">
                 {service.title}
               </h3>
               

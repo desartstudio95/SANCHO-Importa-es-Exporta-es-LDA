@@ -21,12 +21,12 @@ const Hero: React.FC = () => {
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center w-full pb-16">
         <div className="max-w-4xl mx-auto animate-fade-in-up mt-8">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-6 drop-shadow-xl tracking-tight">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-white leading-tight mb-6 drop-shadow-xl tracking-tight">
             SANCHO – Importações <br className="hidden sm:block" />
             <span className="block sm:inline">& Exportações LDA</span>
           </h1>
           
-          <h2 className="text-base sm:text-lg md:text-xl text-sancho-accent font-semibold mb-8 tracking-wide px-2 max-w-3xl mx-auto">
+          <h2 className="text-sm sm:text-base md:text-lg text-sancho-accent font-semibold mb-8 tracking-wide px-2 max-w-3xl mx-auto">
             Soluções completas em Máquinas, Equipamentos Industriais e Logística
           </h2>
 

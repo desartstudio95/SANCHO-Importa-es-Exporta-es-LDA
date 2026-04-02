@@ -66,7 +66,7 @@ const ProductsPage: React.FC = () => {
           <div className="absolute inset-0 bg-gradient-to-r from-sancho-primary to-transparent"></div>
         </div>
         <div className="relative z-10 text-center px-4 pt-10 animate-fade-in-up">
-          <h1 className="text-3xl md:text-4xl font-extrabold text-white mb-4 drop-shadow-xl">
+          <h1 className="text-2xl md:text-3xl font-extrabold text-white mb-4 drop-shadow-xl">
             Nossos Produtos
           </h1>
           <p className="text-base text-sancho-yellow font-bold tracking-wide max-w-2xl mx-auto uppercase">
@@ -102,7 +102,7 @@ const ProductsPage: React.FC = () => {
       {/* 3. PRODUCTS GRID */}
       <section className="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16 opacity-0 translate-y-8 animate-on-scroll">
-          <h2 className="text-2xl font-extrabold text-sancho-primary mb-3">
+          <h2 className="text-xl font-extrabold text-sancho-primary mb-3">
             {categories.find(c => c.id === activeCategory)?.label === 'Todos' ? 'Catálogo Completo' : categories.find(c => c.id === activeCategory)?.label}
           </h2>
           <div className="w-16 h-1.5 bg-sancho-accent mx-auto rounded-full mb-4"></div>
@@ -134,7 +134,7 @@ const ProductsPage: React.FC = () => {
               {/* Product Info */}
               <div className="p-6 flex-grow flex flex-col border-t border-slate-100 group-hover:border-sancho-accent/10 transition-colors">
                 <Link to={`/produto/${product.id}`} title={`Ver detalhes de ${product.name}`} aria-label={`Ver detalhes de ${product.name}`}>
-                  <h3 className="text-xl font-bold text-sancho-primary mb-2 line-clamp-2 hover:text-sancho-accent transition-colors">
+                  <h3 className="text-lg font-bold text-sancho-primary mb-2 line-clamp-2 hover:text-sancho-accent transition-colors">
                     {product.name}
                   </h3>
                 </Link>
@@ -186,7 +186,7 @@ const ProductsPage: React.FC = () => {
         <div className="absolute bottom-0 right-0 w-80 h-80 bg-sancho-yellow/10 rounded-full blur-3xl translate-x-1/3 translate-y-1/3"></div>
 
         <div className="max-w-4xl mx-auto px-4 relative z-10">
-          <h2 className="text-xl md:text-3xl font-extrabold text-white mb-6">
+          <h2 className="text-lg md:text-2xl font-extrabold text-white mb-6">
             Não Encontrou o Que Procura?
           </h2>
           <p className="text-blue-100 text-base md:text-lg mb-12 max-w-2xl mx-auto font-light">

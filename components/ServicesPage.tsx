@@ -45,7 +45,7 @@ const ServicesPage: React.FC = () => {
           <div className="absolute inset-0 bg-gradient-to-tr from-sancho-primary/50 to-sancho-accent/20"></div>
         </div>
         <div className="relative z-10 text-center px-4 pt-10 animate-fade-in-up">
-          <h1 className="text-3xl md:text-4xl font-extrabold text-white mb-6 drop-shadow-2xl">
+          <h1 className="text-2xl md:text-3xl font-extrabold text-white mb-6 drop-shadow-2xl">
             Nossos Serviços
           </h1>
           <div className="w-24 h-2 bg-sancho-yellow mx-auto rounded-full mb-8"></div>
@@ -83,7 +83,7 @@ const ServicesPage: React.FC = () => {
 
               {/* Card Content */}
               <div className="p-8 pt-2 flex-grow flex flex-col">
-                <h3 className="text-2xl font-bold text-sancho-primary mb-4 group-hover:text-sancho-accent transition-colors">
+                <h3 className="text-xl font-bold text-sancho-primary mb-4 group-hover:text-sancho-accent transition-colors">
                   {service.title}
                 </h3>
                 <p className="text-slate-600 mb-6 text-sm leading-relaxed">
@@ -121,7 +121,7 @@ const ServicesPage: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="opacity-0 translate-y-8 animate-on-scroll">
             <span className="text-sancho-accent font-bold uppercase tracking-widest text-sm mb-2 block">Passo a Passo</span>
-            <h2 className="text-2xl md:text-3xl font-extrabold text-sancho-primary mb-4">Como Trabalhamos</h2>
+            <h2 className="text-xl md:text-2xl font-extrabold text-sancho-primary mb-4">Como Trabalhamos</h2>
             <div className="w-16 h-1 bg-sancho-yellow mx-auto rounded-full mb-12"></div>
           </div>
           
@@ -152,7 +152,7 @@ const ServicesPage: React.FC = () => {
         <div className="absolute right-0 top-0 w-1/3 h-full bg-sancho-secondary/50 skew-x-12 transform origin-top-right"></div>
         
         <div className="max-w-4xl mx-auto px-4 text-center relative z-10">
-          <h2 className="text-2xl md:text-3xl font-extrabold mb-6 drop-shadow-lg">
+          <h2 className="text-xl md:text-2xl font-extrabold mb-6 drop-shadow-lg">
             Precisa de Ajuda para Escolher?
           </h2>
           <p className="text-lg text-blue-100 mb-12 max-w-2xl mx-auto font-light leading-relaxed">
