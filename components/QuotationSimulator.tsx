@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Calculator, Package, RefreshCw, AlertCircle, Ship, Plane, ChevronDown, MessageCircle } from 'lucide-react';
-import { WHATSAPP_LINK } from '../constants.tsx';
-import SEO from './SEO.tsx';
+import { WHATSAPP_LINK } from '../constants';
+import SEO from './SEO';
 
 // LISTA COMPLETA DE EQUIPAMENTOS E CAMIÕES
 // Valores FOB estimados (MZN) e Pesos (KG) para simulação

@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
-import { EMAIL, COMPANY_NAME } from '../constants.tsx';
+import { EMAIL, COMPANY_NAME } from '../constants';
 import { Shield, Lock, FileText, UserCheck } from 'lucide-react';
-import SEO from './SEO.tsx';
+import SEO from './SEO';
 
 const PrivacyPolicy: React.FC = () => {
   useEffect(() => {

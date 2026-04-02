@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { FAQ_ITEMS, WHATSAPP_LINK } from '../constants.tsx';
+import { FAQ_ITEMS, WHATSAPP_LINK } from '../constants';
 import { ChevronDown, ChevronUp, MessageCircle, HelpCircle } from 'lucide-react';
-import SEO from './SEO.tsx';
+import SEO from './SEO';
 
 const FAQPage: React.FC = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(null);

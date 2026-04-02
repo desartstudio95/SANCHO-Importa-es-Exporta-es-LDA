@@ -1,44 +1,39 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { HelmetProvider } from 'react-helmet-async';
-import Navbar from './components/Navbar.tsx';
-import Home from './components/Home.tsx';
-import About from './components/About.tsx';
-import ServicesPage from './components/ServicesPage.tsx';
-import ProductsPage from './components/ProductsPage.tsx';
-import ContactPage from './components/ContactPage.tsx';
-import QuotationSimulator from './components/QuotationSimulator.tsx';
-import ProductDetail from './components/ProductDetail.tsx';
-import FAQPage from './components/FAQPage.tsx';
-import Footer from './components/Footer.tsx';
-import AiChatbot from './components/AiChatbot.tsx';
-import BackToTop from './components/BackToTop.tsx';
-import CookieConsent from './components/CookieConsent.tsx';
-import ScrollToTop from './components/ScrollToTop.tsx';
-import PrivacyPolicy from './components/PrivacyPolicy.tsx';
-import LoadingScreen from './components/LoadingScreen.tsx';
-import BackButton from './components/BackButton.tsx';
+import Navbar from './components/Navbar';
+import Home from './components/Home';
+import About from './components/About';
+import ServicesPage from './components/ServicesPage';
+import ProductsPage from './components/ProductsPage';
+import ContactPage from './components/ContactPage';
+import QuotationSimulator from './components/QuotationSimulator';
+import ProductDetail from './components/ProductDetail';
+import FAQPage from './components/FAQPage';
+import Footer from './components/Footer';
+import AiChatbot from './components/AiChatbot';
+import BackToTop from './components/BackToTop';
+import CookieConsent from './components/CookieConsent';
+import ScrollToTop from './components/ScrollToTop';
+import PrivacyPolicy from './components/PrivacyPolicy';
+import LoadingScreen from './components/LoadingScreen';
+import BackButton from './components/BackButton';
 
 const App: React.FC = () => {
-  console.log("App component mounting...");
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    console.log("App useEffect running...");
     // Simulate initial loading
     const timer = setTimeout(() => {
-      console.log("Loading finished, setting isLoading to false");
       setIsLoading(false);
     }, 2000);
     return () => clearTimeout(timer);
   }, []);
 
   if (isLoading) {
-    console.log("Rendering LoadingScreen...");
     return <LoadingScreen />;
   }
 
-  console.log("Rendering main app routes...");
   return (
     <HelmetProvider>
       <BrowserRouter>

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Phone, Mail, MapPin, Send } from 'lucide-react';
-import { PHONE_1, EMAIL, ADDRESS, GOOGLE_MAPS_LINK } from '../constants.tsx';
+import { PHONE_1, EMAIL, ADDRESS, GOOGLE_MAPS_LINK } from '../constants';
 
 const Contact: React.FC = () => {
   const [formStatus, setFormStatus] = useState<'idle' | 'success'>('idle');

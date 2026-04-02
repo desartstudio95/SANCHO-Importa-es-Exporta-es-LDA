@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
-import { CATALOG_DATA } from '../constants.tsx';
+import { CATALOG_DATA } from '../constants';
 import { Check, Calculator } from 'lucide-react';
 
 const Catalog: React.FC = () => {

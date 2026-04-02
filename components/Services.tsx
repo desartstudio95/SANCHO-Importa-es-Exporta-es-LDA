@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { SERVICES } from '../constants.tsx';
+import { SERVICES } from '../constants';
 
 const Services: React.FC = () => {
   useEffect(() => {

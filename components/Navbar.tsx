@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, MessageCircle } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
-import { NAV_LINKS, WHATSAPP_LINK } from '../constants.tsx';
+import { NAV_LINKS, WHATSAPP_LINK } from '../constants';
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);

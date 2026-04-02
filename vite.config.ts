@@ -1,16 +1,11 @@
 import path from 'path';
-import { fileURLToPath } from 'url';
 import { defineConfig, loadEnv } from 'vite';
 import react from '@vitejs/plugin-react';
 import tailwindcss from '@tailwindcss/vite';
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-
 export default defineConfig(({ mode }) => {
     const env = loadEnv(mode, '.', '');
     return {
-      base: '/',
       server: {
         port: 3000,
         host: '0.0.0.0',
@@ -25,14 +20,20 @@ export default defineConfig(({ mode }) => {
       },
       resolve: {
         alias: {
-          '@': path.resolve(__dirname, './src'),
+          '@': path.resolve(__dirname, '.'),
         }
       },
       build: {
-        chunkSizeWarningLimit: 2000,
-        outDir: 'dist',
-        assetsDir: 'assets',
-        sourcemap: false,
+        chunkSizeWarningLimit: 1000,
+        rollupOptions: {
+          output: {
+            manualChunks: {
+              'vendor-react': ['react', 'react-dom', 'react-router-dom'],
+              'vendor-icons': ['lucide-react'],
+              'vendor-motion': ['framer-motion'],
+            }
+          }
+        }
       }
     };
 });
