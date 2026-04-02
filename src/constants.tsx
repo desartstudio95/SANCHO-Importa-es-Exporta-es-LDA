@@ -1,5 +1,5 @@
 import { Truck, Sprout, ShieldCheck, TrendingUp, Users, Package, HardHat, Cog, Globe, Wrench, Warehouse, Wallet, Headset } from 'lucide-react';
-import { ServiceItem, ProductCategory } from './types';
+import { ServiceItem, ProductCategory } from './types.ts';
 
 export const COMPANY_NAME = "SANCHO – Importações & Exportações LDA";
 export const PHONE_1 = "+258 87 422 8160";
