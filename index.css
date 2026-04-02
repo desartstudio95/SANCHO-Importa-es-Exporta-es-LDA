@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+@theme {
+  --color-sancho-primary: #0B2545;
+  --color-sancho-primary-dark: #061830;
+  --color-sancho-secondary: #1E3A8A;
+  --color-sancho-accent: #00A8E8;
+  --color-sancho-accent-hover: #0284C7;
+  --color-sancho-yellow: #FFC107;
+  --color-sancho-yellow-hover: #F59E0B;
+  --color-sancho-yellow-light: #FEF3C7;
+  --color-sancho-light: #F8FAFC;
+  --font-sans: "Inter", sans-serif;
+  --animate-fade-in-up: fadeInUp 0.6s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+:root {
+  font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Melhoria no toque para mobile */
+button, a {
+  touch-action: manipulation;
+}
+
+/* Esconder scrollbar mas manter funcionalidade */
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+.scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+/* Padrão de fundo para secções */
+.pattern-dots {
+  background-image: radial-gradient(#ffffff 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+.pattern-grid {
+  background-size: 40px 40px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.05) 1px, transparent 1px),
+                    linear-gradient(to bottom, rgba(0, 0, 0, 0.05) 1px, transparent 1px);
+}
