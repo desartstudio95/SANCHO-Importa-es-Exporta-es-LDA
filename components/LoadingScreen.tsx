@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 const LoadingScreen: React.FC = () => {
+  console.log("LoadingScreen component rendering...");
   return (
     <div className="fixed inset-0 z-[9999] flex flex-col items-center justify-center bg-white">
       <motion.div

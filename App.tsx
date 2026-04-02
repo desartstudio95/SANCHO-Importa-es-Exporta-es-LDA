@@ -20,20 +20,25 @@ import LoadingScreen from './components/LoadingScreen';
 import BackButton from './components/BackButton';
 
 const App: React.FC = () => {
+  console.log("App component mounting...");
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
+    console.log("App useEffect running...");
     // Simulate initial loading
     const timer = setTimeout(() => {
+      console.log("Loading finished, setting isLoading to false");
       setIsLoading(false);
     }, 2000);
     return () => clearTimeout(timer);
   }, []);
 
   if (isLoading) {
+    console.log("Rendering LoadingScreen...");
     return <LoadingScreen />;
   }
 
+  console.log("Rendering main app routes...");
   return (
     <HelmetProvider>
       <BrowserRouter>
