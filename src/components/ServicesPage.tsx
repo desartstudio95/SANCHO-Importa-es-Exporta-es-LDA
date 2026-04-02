@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
-import { DETAILED_SERVICES_PAGE, WORK_PROCESS, WHATSAPP_LINK } from '../constants';
+import { DETAILED_SERVICES_PAGE, WORK_PROCESS, WHATSAPP_LINK } from '../constants.tsx';
 import { Check, MessageCircle, Calculator, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import SEO from './SEO';
+import SEO from './SEO.tsx';
 
 const ServicesPage: React.FC = () => {
   useEffect(() => {

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Phone, Mail, MapPin, MessageCircle, Send } from 'lucide-react';
-import { PHONE_1, EMAIL, ADDRESS, WHATSAPP_LINK, GOOGLE_MAPS_LINK } from '../constants';
-import SEO from './SEO';
+import { PHONE_1, EMAIL, ADDRESS, WHATSAPP_LINK, GOOGLE_MAPS_LINK } from '../constants.tsx';
+import SEO from './SEO.tsx';
 
 const ContactPage: React.FC = () => {
   const [formData, setFormData] = useState({

@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { CATALOG_DATA, WHATSAPP_LINK } from '../constants';
+import { CATALOG_DATA, WHATSAPP_LINK } from '../constants.tsx';
 import { HardHat, Cog, Sprout, Truck, Check, MessageCircle, Calculator, Package } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import LazyImage from './LazyImage';
-import SEO from './SEO';
+import LazyImage from './LazyImage.tsx';
+import SEO from './SEO.tsx';
 
 const ProductsPage: React.FC = () => {
   const [activeCategory, setActiveCategory] = useState<string>('all');

@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
-import { VALUES, WHATSAPP_LINK } from '../constants';
+import { VALUES, WHATSAPP_LINK } from '../constants.tsx';
 import { Target, Eye, MessageCircle, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import SEO from './SEO';
+import SEO from './SEO.tsx';
 
 const About: React.FC = () => {
   useEffect(() => {
