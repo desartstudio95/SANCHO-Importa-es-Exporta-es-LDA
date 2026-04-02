@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { MessageCircle, Calculator } from 'lucide-react';
-import { HERO_CONTENT, WHATSAPP_LINK } from '@/constants';
+import { HERO_CONTENT, WHATSAPP_LINK } from '../constants';
 
 const Hero: React.FC = () => {
   return (

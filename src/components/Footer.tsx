@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { COMPANY_NAME, NAV_LINKS, WHATSAPP_LINK, PHONE_1, EMAIL, ADDRESS, GOOGLE_MAPS_LINK, FACEBOOK_LINK, INSTAGRAM_LINK } from '@/constants';
+import { COMPANY_NAME, NAV_LINKS, WHATSAPP_LINK, PHONE_1, EMAIL, ADDRESS, GOOGLE_MAPS_LINK, FACEBOOK_LINK, INSTAGRAM_LINK } from '../constants';
 import { Facebook, Instagram, Mail, Phone, MapPin, ArrowRight, Shield } from 'lucide-react';
 
 const Footer: React.FC = () => {

@@ -1,10 +1,10 @@
 import React from 'react';
-import Hero from '@/components/Hero';
-import Services from '@/components/Services';
+import Hero from './Hero';
+import Services from './Services';
 // About is now a separate page
-import Catalog from '@/components/Catalog';
-import Contact from '@/components/Contact';
-import SEO from '@/components/SEO';
+import Catalog from './Catalog';
+import Contact from './Contact';
+import SEO from './SEO';
 
 const Home: React.FC = () => {
   const localBusinessSchema = {

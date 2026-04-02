@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { CATALOG_DATA, WHATSAPP_LINK } from '@/constants';
+import { CATALOG_DATA, WHATSAPP_LINK } from '../constants';
 import { Check, MessageCircle, ArrowRight, ShieldCheck, Ruler, Truck, FileText } from 'lucide-react';
-import LazyImage from '@/components/LazyImage';
-import SEO from '@/components/SEO';
+import LazyImage from './LazyImage';
+import SEO from './SEO';
 
 const ProductDetail: React.FC = () => {
   const { id } = useParams<{ id: string }>();
