@@ -6,9 +6,9 @@ import { Link } from 'react-router-dom';
 
 const Portfolio: React.FC = () => {
   return (
-    <div className="py-24 bg-white">
+    <div className="py-12 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
+        <div className="text-center mb-8">
           <h2 className="text-3xl md:text-4xl font-bold text-sancho-primary mb-4">Nosso Portfólio de Produtos</h2>
           <p className="text-slate-600 max-w-2xl mx-auto">
             Conheça as categorias de equipamentos e máquinas que importamos para impulsionar o seu negócio.

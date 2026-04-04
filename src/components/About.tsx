@@ -41,12 +41,12 @@ const About: React.FC = () => {
         </div>
         <div className="relative z-10 text-center px-4 animate-fade-in-up">
           <div className="mb-6 flex justify-center">
-            <BackButton className="text-white hover:text-sancho-yellow" />
+            <BackButton className="text-white hover:text-sancho-accent" />
           </div>
           <h1 className="text-3xl md:text-5xl font-extrabold text-white mb-6 drop-shadow-2xl">
             Sobre a SANCHO
           </h1>
-          <div className="w-24 h-2 bg-sancho-yellow mx-auto rounded-full mb-6"></div>
+          <div className="w-24 h-2 bg-sancho-accent mx-auto rounded-full mb-6"></div>
           <p className="text-lg md:text-xl text-blue-100 font-medium tracking-wide max-w-2xl mx-auto">
             Excelência e Tradição em Importação e Exportação
           </p>
@@ -60,11 +60,11 @@ const About: React.FC = () => {
             
             {/* Text Content */}
             <div className="lg:w-1/2 opacity-0 translate-y-8 animate-on-scroll">
-              <span className="inline-block px-4 py-2 bg-sancho-yellow/20 text-sancho-yellow-hover rounded-full text-xs font-bold uppercase tracking-wider mb-6">
+              <span className="inline-block px-4 py-2 bg-sancho-accent/20 text-sancho-accent rounded-full text-xs font-bold uppercase tracking-wider mb-6">
                 Nossa História
               </span>
               <h2 className="text-2xl md:text-4xl font-extrabold text-sancho-primary mb-6 leading-tight">
-                Construindo o Futuro com <span className="text-sancho-accent">Qualidade</span> e <span className="text-sancho-yellow">Confiança</span>
+                Construindo o Futuro com <span className="text-sancho-accent">Qualidade</span> e <span className="text-sancho-accent">Confiança</span>
               </h2>
               
               <div className="space-y-6 text-lg text-slate-600 leading-relaxed font-light">
@@ -158,7 +158,7 @@ const About: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16 opacity-0 translate-y-8 animate-on-scroll">
                 <h2 className="text-2xl md:text-3xl font-extrabold text-sancho-primary mb-4">Nossos Valores</h2>
-                <div className="w-20 h-1.5 bg-sancho-yellow mx-auto rounded-full"></div>
+                <div className="w-20 h-1.5 bg-sancho-accent mx-auto rounded-full"></div>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -189,7 +189,7 @@ const About: React.FC = () => {
            </p>
            <Link 
              to="/contactos" 
-             className="inline-flex items-center gap-2 bg-sancho-yellow text-sancho-primary font-bold px-8 py-4 rounded-full text-lg shadow-lg hover:bg-white transition-all transform hover:-translate-y-1"
+             className="inline-flex items-center gap-2 bg-sancho-accent text-white font-bold px-8 py-4 rounded-full text-lg shadow-lg hover:bg-white hover:text-sancho-primary transition-all transform hover:-translate-y-1"
            >
              Fale Conosco <ArrowRight size={20} />
            </Link>

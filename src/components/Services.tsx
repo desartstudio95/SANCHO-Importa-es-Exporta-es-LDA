@@ -24,9 +24,9 @@ const Services: React.FC = () => {
   }, []);
 
   return (
-    <section id="services" className="py-16 md:py-20 bg-white">
+    <section id="services" className="py-10 md:py-12 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12 opacity-0 translate-y-8 animate-on-scroll">
+        <div className="text-center mb-8 opacity-0 translate-y-8 animate-on-scroll">
           <span className="bg-sancho-accent/10 text-sancho-accent px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider">Nossos Serviços</span>
           <h2 className="text-2xl md:text-3xl font-extrabold text-sancho-primary mt-4 mb-3">O Que Fazemos</h2>
           <p className="mt-2 text-slate-500 max-w-2xl mx-auto text-sm md:text-base">

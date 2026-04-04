@@ -5,7 +5,7 @@ import { HERO_CONTENT, WHATSAPP_LINK } from '../constants';
 
 const Hero: React.FC = () => {
   return (
-    <section id="hero" className="relative min-h-[550px] lg:h-[80vh] flex items-center justify-center overflow-hidden bg-sancho-primary pt-40 md:pt-52">
+    <section id="hero" className="relative min-h-[500px] lg:h-[70vh] flex items-center justify-center overflow-hidden bg-sancho-primary pt-32 md:pt-40">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <img 
@@ -19,7 +19,7 @@ const Hero: React.FC = () => {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center w-full pb-16">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center w-full pb-12">
         <div className="max-w-4xl mx-auto animate-fade-in-up mt-8">
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-white leading-tight mb-6 drop-shadow-xl tracking-tight">
             SANCHO – Importações <br className="hidden sm:block" />

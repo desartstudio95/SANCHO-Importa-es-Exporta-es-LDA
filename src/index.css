@@ -4,7 +4,10 @@
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
   --color-sancho-primary: #0B2545;
   --color-sancho-secondary: #134074;
-  --color-sancho-accent: #EE6C4D;
+  --color-sancho-accent: #3ABEF9;
+  --color-sancho-accent-hover: #0796D6;
+  --color-sancho-yellow: #3ABEF9;
+  --color-sancho-yellow-hover: #0796D6;
   --color-sancho-light: #E0E1DD;
 }
 

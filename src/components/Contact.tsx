@@ -5,14 +5,14 @@ import { PHONE_1, EMAIL, ADDRESS, WHATSAPP_LINK } from '../constants';
 
 const Contact: React.FC = () => {
   return (
-    <div className="py-24 bg-white">
+    <div className="py-12 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
           
           {/* Contact Info */}
           <div>
             <h2 className="text-3xl md:text-4xl font-bold text-sancho-primary mb-6">Entre em Contacto</h2>
-            <p className="text-slate-600 mb-10 leading-relaxed">
+            <p className="text-slate-600 mb-6 leading-relaxed">
               Estamos prontos para ajudar o seu negócio a crescer. Fale connosco para cotações, consultoria técnica ou suporte.
             </p>
 

@@ -31,8 +31,8 @@ const Footer: React.FC = () => {
       {/* Gradient Overlay */}
       <div className="absolute inset-0 bg-gradient-to-t from-sancho-primary via-sancho-primary/95 to-sancho-primary/90 z-0"></div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-8">
           
           {/* 1. Brand Section */}
           <div className="space-y-6">

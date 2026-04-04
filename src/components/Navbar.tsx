@@ -23,9 +23,9 @@ const Navbar: React.FC = () => {
      let classes = "transition-all duration-300 font-semibold tracking-wide";
 
      if (mobile) {
-        classes += ` block px-4 py-3 rounded-md text-base ${isActive ? 'bg-sancho-yellow-light text-sancho-primary' : 'text-sancho-secondary hover:text-sancho-accent hover:bg-slate-50'}`;
+        classes += ` block px-4 py-3 rounded-md text-base ${isActive ? 'bg-sancho-accent/10 text-sancho-accent' : 'text-sancho-secondary hover:text-sancho-accent hover:bg-slate-50'}`;
      } else {
-        classes += ` text-sm px-4 py-2 rounded-full ${isActive ? 'bg-sancho-yellow-light text-sancho-primary' : 'text-sancho-secondary hover:text-sancho-accent hover:bg-slate-50'}`;
+        classes += ` text-sm px-4 py-2 rounded-full ${isActive ? 'bg-sancho-accent/10 text-sancho-accent' : 'text-sancho-secondary hover:text-sancho-accent hover:bg-slate-50'}`;
      }
 
      if (isAnchor) {
@@ -44,9 +44,9 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <nav className={`fixed w-full z-50 transition-all duration-300 ease-in-out bg-white border-b border-transparent ${scrolled ? 'shadow-md py-2' : 'py-3 md:py-4 shadow-sm'}`}>
+    <nav className={`fixed w-full z-50 transition-all duration-300 ease-in-out bg-white border-b border-transparent ${scrolled ? 'shadow-md py-1' : 'py-2 md:py-3 shadow-sm'}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-14 md:h-16">
+        <div className="flex justify-between items-center h-12 md:h-14">
           {/* Logo Section */}
           <Link to="/" className="flex-shrink-0 flex items-center gap-2 md:gap-3 cursor-pointer group">
             <div className="w-10 h-10 md:w-14 md:h-14 bg-sancho-primary rounded-xl flex items-center justify-center shadow-lg group-hover:bg-sancho-accent transition-colors">
@@ -73,7 +73,7 @@ const Navbar: React.FC = () => {
                 href={WHATSAPP_LINK}
                 target="_blank"
                 rel="noreferrer"
-                className="bg-sancho-yellow text-sancho-primary px-5 py-2 rounded-full font-bold text-sm transition-all duration-300 flex items-center gap-2 hover:bg-sancho-yellow-hover hover:shadow-lg transform hover:-translate-y-0.5"
+                className="bg-sancho-accent text-white px-5 py-2 rounded-full font-bold text-sm transition-all duration-300 flex items-center gap-2 hover:bg-sancho-accent/90 hover:shadow-lg transform hover:-translate-y-0.5"
               >
                 <MessageCircle size={16} className="fill-current" />
                 <span>WhatsApp</span>
@@ -106,7 +106,7 @@ const Navbar: React.FC = () => {
                 href={WHATSAPP_LINK}
                 target="_blank"
                 rel="noreferrer"
-                className="block w-full text-center bg-sancho-yellow text-sancho-primary px-3 py-3 rounded-md font-bold hover:bg-sancho-yellow-hover transition-colors shadow-sm flex items-center justify-center gap-2"
+                className="block w-full text-center bg-sancho-accent text-white px-3 py-3 rounded-md font-bold hover:bg-sancho-accent/90 transition-colors shadow-sm flex items-center justify-center gap-2"
               >
                 <MessageCircle size={20} />
                 Falar no WhatsApp

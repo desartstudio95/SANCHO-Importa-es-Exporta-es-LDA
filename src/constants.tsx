@@ -34,6 +34,7 @@ export const NAV_LINKS = [
   { label: 'Serviços', href: '/servicos' },
   { label: 'Sobre Nós', href: '/sobre' },
   { label: 'Contactos', href: '/contactos' },
+  { label: 'Simular Cotação', href: '/simular-cotacao' },
 ];
 
 export const HERO_CONTENT = {

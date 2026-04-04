@@ -80,7 +80,7 @@ const ProductDetail: React.FC = () => {
               />
 
               <div className="absolute top-6 left-6 z-20 pointer-events-none">
-                <span className="bg-sancho-yellow text-sancho-primary text-xs font-extrabold px-3 py-1.5 rounded-full uppercase tracking-wider shadow-md">
+                <span className="bg-sancho-accent text-white text-xs font-extrabold px-3 py-1.5 rounded-full uppercase tracking-wider shadow-md">
                    {category?.title}
                 </span>
               </div>
@@ -106,7 +106,7 @@ const ProductDetail: React.FC = () => {
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   {product.specs.map((spec, idx) => (
                     <div key={idx} className="flex items-center gap-3 bg-white p-3 rounded-lg shadow-sm transition-all duration-300 hover:scale-[1.02] hover:bg-sancho-accent/10 hover:shadow-md cursor-default">
-                      <div className="w-2 h-2 rounded-full bg-sancho-yellow shrink-0"></div>
+                      <div className="w-2 h-2 rounded-full bg-sancho-accent shrink-0"></div>
                       <span className="text-sm font-medium text-slate-700">{spec}</span>
                     </div>
                   ))}
@@ -164,7 +164,7 @@ const ProductDetail: React.FC = () => {
               </div>
            </div>
            <div className="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 flex items-center gap-4 opacity-0 translate-y-8 animate-on-scroll" style={{ transitionDelay: '200ms' }}>
-              <div className="p-3 bg-yellow-50 text-sancho-yellow rounded-full"><ShieldCheck size={24} /></div>
+              <div className="p-3 bg-sancho-accent/10 text-sancho-accent rounded-full"><ShieldCheck size={24} /></div>
               <div>
                 <h4 className="font-bold text-sancho-primary">Garantia Certificada</h4>
                 <p className="text-xs text-slate-500">Produtos originais com garantia</p>
