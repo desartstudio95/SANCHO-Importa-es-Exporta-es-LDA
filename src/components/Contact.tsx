@@ -4,6 +4,26 @@ import { Phone, Mail, MapPin, MessageCircle, Send } from 'lucide-react';
 import { PHONE_1, EMAIL, ADDRESS, WHATSAPP_LINK } from '../constants';
 
 const Contact: React.FC = () => {
+  const [formData, setFormData] = React.useState({
+    name: '',
+    email: '',
+    subject: '',
+    message: ''
+  });
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    const text = `*Nova Mensagem de Contacto - SANCHO*\n\n*Nome:* ${formData.name}\n*Email:* ${formData.email}\n*Assunto:* ${formData.subject}\n*Mensagem:* ${formData.message}`;
+    const encodedText = encodeURIComponent(text);
+    const whatsappUrl = `https://wa.me/258874228160?text=${encodedText}`;
+    window.open(whatsappUrl, '_blank');
+  };
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({ ...prev, [name]: value }));
+  };
+
   return (
     <div className="py-12 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -11,8 +31,8 @@ const Contact: React.FC = () => {
           
           {/* Contact Info */}
           <div>
-            <h2 className="text-3xl md:text-4xl font-bold text-sancho-primary mb-6">Entre em Contacto</h2>
-            <p className="text-slate-600 mb-6 leading-relaxed">
+            <h2 className="text-2xl md:text-3xl font-bold text-sancho-primary mb-6">Entre em Contacto</h2>
+            <p className="text-slate-600 mb-6 leading-relaxed text-sm">
               Estamos prontos para ajudar o seu negócio a crescer. Fale connosco para cotações, consultoria técnica ou suporte.
             </p>
 
@@ -47,18 +67,6 @@ const Contact: React.FC = () => {
                 </div>
               </div>
             </div>
-
-            <div className="mt-12">
-              <a 
-                href={WHATSAPP_LINK}
-                target="_blank"
-                rel="noreferrer"
-                className="inline-flex items-center gap-3 bg-sancho-yellow text-sancho-primary px-8 py-4 rounded-xl font-bold hover:bg-sancho-yellow-hover transition-all shadow-lg hover:shadow-xl"
-              >
-                <MessageCircle size={24} />
-                Falar no WhatsApp Agora
-              </a>
-            </div>
           </div>
 
           {/* Contact Form */}
@@ -68,26 +76,61 @@ const Contact: React.FC = () => {
             viewport={{ once: true }}
             className="bg-slate-50 p-8 md:p-10 rounded-3xl border border-slate-100"
           >
-            <form className="space-y-6" onSubmit={(e) => e.preventDefault()}>
+            <form className="space-y-6" onSubmit={handleSubmit}>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="space-y-2">
                   <label className="text-sm font-bold text-sancho-primary ml-1">Nome Completo</label>
-                  <input type="text" placeholder="Seu nome" className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-sancho-yellow/50 transition-all" />
+                  <input 
+                    type="text" 
+                    name="name"
+                    required
+                    value={formData.name}
+                    onChange={handleChange}
+                    placeholder="Seu nome" 
+                    className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-sancho-yellow/50 transition-all" 
+                  />
                 </div>
                 <div className="space-y-2">
                   <label className="text-sm font-bold text-sancho-primary ml-1">Email</label>
-                  <input type="email" placeholder="seu@email.com" className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-sancho-yellow/50 transition-all" />
+                  <input 
+                    type="email" 
+                    name="email"
+                    required
+                    value={formData.email}
+                    onChange={handleChange}
+                    placeholder="seu@email.com" 
+                    className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-sancho-yellow/50 transition-all" 
+                  />
                 </div>
               </div>
               <div className="space-y-2">
                 <label className="text-sm font-bold text-sancho-primary ml-1">Assunto</label>
-                <input type="text" placeholder="Como podemos ajudar?" className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-sancho-yellow/50 transition-all" />
+                <input 
+                  type="text" 
+                  name="subject"
+                  required
+                  value={formData.subject}
+                  onChange={handleChange}
+                  placeholder="Como podemos ajudar?" 
+                  className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-sancho-yellow/50 transition-all" 
+                />
               </div>
               <div className="space-y-2">
                 <label className="text-sm font-bold text-sancho-primary ml-1">Mensagem</label>
-                <textarea rows={4} placeholder="Escreva sua mensagem aqui..." className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-sancho-yellow/50 transition-all resize-none"></textarea>
+                <textarea 
+                  name="message"
+                  required
+                  value={formData.message}
+                  onChange={handleChange}
+                  rows={4} 
+                  placeholder="Escreva sua mensagem aqui..." 
+                  className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-sancho-yellow/50 transition-all resize-none"
+                ></textarea>
               </div>
-              <button className="w-full bg-sancho-primary text-white py-4 rounded-xl font-bold flex items-center justify-center gap-2 hover:bg-sancho-secondary transition-all shadow-lg">
+              <button 
+                type="submit"
+                className="w-full bg-sancho-primary text-white py-4 rounded-xl font-bold flex items-center justify-center gap-2 hover:bg-sancho-secondary transition-all shadow-lg"
+              >
                 <Send size={20} />
                 Enviar Mensagem
               </button>

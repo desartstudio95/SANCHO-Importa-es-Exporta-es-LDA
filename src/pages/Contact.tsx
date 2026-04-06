@@ -2,10 +2,17 @@ import React from 'react';
 import { COMPANY_NAME, ADDRESS, PHONE_1, EMAIL, GOOGLE_MAPS_LINK } from '../constants';
 import { MapPin, Phone, Mail, Clock, Send, MessageCircle } from 'lucide-react';
 import { motion } from 'motion/react';
+import SEO from '../components/SEO';
 
 const Contact: React.FC = () => {
   return (
     <div className="pt-24 pb-16 min-h-screen">
+      <SEO 
+        title="Contactos"
+        description="Fale com a SANCHO. Estamos localizados em Maputo e prontos para atender suas necessidades de importação e máquinas pesadas."
+        keywords="contacto SANCHO, telefone SANCHO, endereço SANCHO Maputo"
+        canonical="https://www.sanchotrading.com/contactos"
+      />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-20">
           <h1 className="text-4xl md:text-6xl font-extrabold text-sancho-primary mb-6 tracking-tight">

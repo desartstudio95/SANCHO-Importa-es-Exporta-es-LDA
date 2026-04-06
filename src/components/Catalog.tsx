@@ -64,13 +64,15 @@ const Catalog: React.FC = () => {
                         }}
                         className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
                        />
-                       <div className="absolute inset-0 bg-gradient-to-t from-sancho-primary/80 to-transparent opacity-80 pointer-events-none"></div>
-                       <h3 className="absolute bottom-3 left-5 right-5 text-white text-base font-bold drop-shadow-md z-10 group-hover:text-sancho-accent transition-colors leading-tight line-clamp-2">{item.name}</h3>
+                       <div className="absolute inset-0 bg-gradient-to-t from-sancho-primary/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none"></div>
                      </Link>
                   </div>
 
                   {/* Content Area */}
                   <div className="p-5 flex-grow flex flex-col border-t border-slate-100">
+                    <h3 className="text-sancho-primary text-base font-bold mb-3 group-hover:text-sancho-accent transition-colors leading-tight line-clamp-2">
+                      {item.name}
+                    </h3>
                     <ul className="space-y-2 mb-6 flex-grow">
                       {item.specs.slice(0, 3).map((spec, k) => (
                         <li key={k} className="flex items-start gap-2 text-slate-600">
@@ -88,7 +90,7 @@ const Catalog: React.FC = () => {
                           Detalhes
                         </Link>
                         <Link 
-                          to="/cotacao"
+                          to="/simular-cotacao"
                           className="w-full py-2.5 bg-sancho-primary text-white hover:bg-sancho-yellow hover:text-sancho-primary font-bold text-sm rounded-lg text-center transition-all duration-300 shadow-sm hover:shadow-md flex items-center justify-center gap-2"
                         >
                           <Calculator size={16} /> Cotação

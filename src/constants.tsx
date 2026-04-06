@@ -3,9 +3,9 @@ import { Truck, Sprout, ShieldCheck, TrendingUp, Users, Package, HardHat, Cog, G
 import { ServiceItem, ProductCategory } from './types';
 
 export const COMPANY_NAME = "SANCHO – Importações & Exportações LDA";
-export const PHONE_1 = "+258 84 422 8160";
+export const PHONE_1 = "+258 87 422 8160";
 export const WHATSAPP_LINK = "https://wa.link/vbzehq";
-export const EMAIL = "anisiosancho8@gmail.com";
+export const EMAIL = "info@sanchotrading.com";
 export const ADDRESS = "Cidade de Maputo, Bairro Alto Maé, Avenida Eduardo Mondlane N°3112 1°Andar";
 export const GOOGLE_MAPS_LINK = "https://www.google.com/maps/search/?api=1&query=Cidade+de+Maputo+Bairro+Alto+Maé+Avenida+Eduardo+Mondlane+3112";
 
@@ -93,7 +93,7 @@ export const DETAILED_SERVICES_PAGE = [
     ]
   },
   {
-    title: "Consultoria Técnica",
+    title: "Consultoria Técnica Especializada",
     description: "Equipe especializada para auxiliar na escolha dos equipamentos ideais para suas necessidades específicas e projetos.",
     image: "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&q=80&w=1000",
     icon: <Headset size={28} />,
@@ -102,30 +102,6 @@ export const DETAILED_SERVICES_PAGE = [
       "Recomendações personalizadas",
       "Suporte técnico especializado",
       "Acompanhamento de projetos"
-    ]
-  },
-  {
-    title: "Manutenção e Suporte",
-    description: "Serviços de manutenção preventiva e corretiva para garantir o máximo desempenho e durabilidade dos seus equipamentos.",
-    image: "https://images.unsplash.com/photo-1581092921461-eab62e97a782?auto=format&fit=crop&q=80&w=1000",
-    icon: <Wrench size={28} />,
-    features: [
-      "Manutenção preventiva",
-      "Reparos e assistência técnica",
-      "Peças de reposição originais",
-      "Suporte pós-venda"
-    ]
-  },
-  {
-    title: "Logística e Armazenamento",
-    description: "Soluções completas de logística e armazenamento seguro para gestão eficiente de mercadorias e equipamentos.",
-    image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=1000",
-    icon: <Warehouse size={28} />,
-    features: [
-      "Armazém seguro e moderno",
-      "Gestão de inventário",
-      "Distribuição eficiente",
-      "Rastreamento de mercadorias"
     ]
   },
   {
@@ -178,7 +154,7 @@ export const CATALOG_DATA: ProductCategory[] = [
     id: "construction",
     title: "Máquinas de Construção",
     description: "Escavadeiras, Betoneiras e Maquinaria Pesada das melhores marcas.",
-    image: "https://images.unsplash.com/photo-1541625602330-2277a4c46182?q=80&w=1000&auto=format&fit=crop", 
+    image: "https://i.ibb.co/HfkBL2Yg/IMG-20260406-WA0003.jpg", 
     items: [
       { 
         id: "escavadeira-sany-sy215c",
@@ -200,7 +176,7 @@ export const CATALOG_DATA: ProductCategory[] = [
         id: "betoneira-menegotti-400l",
         name: "Betoneira Menegotti Prime 400L", 
         specs: ["Capacidade: 400 Litros", "Uso Profissional", "Alta Durabilidade"],
-        image: "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?q=80&w=1000&auto=format&fit=crop",
+        image: "https://i.ibb.co/rf04Pqys/betoneira-400l-menegotti-prime-principal-1-1024x703.jpg",
         fullDescription: "Equipamento durável e indicado para projetos de pequeno a médio porte. Econômico e feito na medida certa para quem busca eficiência com baixo investimento.",
         features: ["Tambor estampado em chapa de aço", "Pintura eletrostática", "Fácil operação e transporte"]
       },
@@ -208,7 +184,7 @@ export const CATALOG_DATA: ProductCategory[] = [
         id: "caminhao-betoneira-sany",
         name: "Caminhão Betoneira SANY SY412C-8", 
         specs: ["Mistura: 12m³", "Motor: P11C-UJ", "Tanque Água: 800L"],
-        image: "https://images.unsplash.com/photo-1579738760089-29177b8f9708?q=80&w=1000&auto=format&fit=crop",
+        image: "https://i.ibb.co/KcQ5J0Dm/412-153455.webp",
         fullDescription: "Caminhão betoneira SANY com capacidade de 12 metros cúbicos. Alta eficiência de mistura e descarga rápida, ideal para grandes concretagens.",
         features: ["Tecnologia anti-desgaste no tambor", "Sistema hidráulico de alta performance", "Cabine ergonômica"]
       },
@@ -216,7 +192,7 @@ export const CATALOG_DATA: ProductCategory[] = [
         id: "motoniveladora-sdlg",
         name: "Motoniveladora SDLG G9138H", 
         specs: ["Peso: 13.275 kg", "Lâmina: 3.658 mm", "Potência: 141 hp"],
-        image: "https://images.unsplash.com/photo-1616401784845-180882ba9ba8?q=80&w=1000&auto=format&fit=crop",
+        image: "https://i.ibb.co/kRn57H4/Motoniv-G9138-H-2000x1330-Baixa-02.webp",
         fullDescription: "Motoniveladora SDLG G9138H oferece precisão no nivelamento e alta força de tração. Ideal para construção de estradas e manutenção de vias.",
         features: ["Visibilidade panorâmica", "Controle hidráulico preciso", "Estrutura robusta"]
       },
@@ -224,7 +200,7 @@ export const CATALOG_DATA: ProductCategory[] = [
         id: "rolo-vibratorio-ltc",
         name: "Rolo Vibratório LTC203", 
         specs: ["Peso: 3300 Kg", "Tambor: 1250 mm", "Tanque: 200 L"],
-        image: "https://images.unsplash.com/photo-1590082695503-4f114c0003cb?q=80&w=1000&auto=format&fit=crop",
+        image: "https://i.ibb.co/C57TMV4q/ssr-ac-113145.webp",
         fullDescription: "Rolo compactador vibratório ideal para compactação de asfalto e solos granulares em obras urbanas e rodoviárias.",
         features: ["Direção articulada", "Sistema de aspersão de água", "Fácil manutenção"]
       },
@@ -232,7 +208,7 @@ export const CATALOG_DATA: ProductCategory[] = [
         id: "carregadeira-sdlg",
         name: "Pá Carregadeira SDLG L918H", 
         specs: ["Caçamba: 1.0m³", "Peso: 6.700 kg", "Potência: 88 HP"],
-        image: "https://images.unsplash.com/photo-1519003300449-424ad0405076?q=80&w=1000&auto=format&fit=crop",
+        image: "https://i.ibb.co/hxy9CFBz/CAT-966-D-2-WH-800x600px.webp",
         fullDescription: "Carregadeira compacta e ágil, perfeita para movimentação de materiais em espaços reduzidos e canteiros de obras.",
         features: ["Motor econômico", "Cabine confortável", "Alta velocidade de ciclo"]
       }
@@ -242,13 +218,13 @@ export const CATALOG_DATA: ProductCategory[] = [
     id: "industrial",
     title: "Produtos Industriais",
     description: "Geradores, Compressores e Motores de alta potência.",
-    image: "https://images.unsplash.com/photo-1496247749665-49cf5b1022e9?q=80&w=1000&auto=format&fit=crop", 
+    image: "https://i.ibb.co/G42GLmWx/made-in-china.png", 
     items: [
       { 
         id: "gerador-csdk-280l",
         name: "Gerador CSDK-280L (Motor Kohler)", 
         specs: ["Motor: Kohler 25HP", "Rotação: 1500 rpm", "Refrigeração: Água"],
-        image: "https://images.unsplash.com/photo-1496247749665-49cf5b1022e9?q=80&w=1000&auto=format&fit=crop",
+        image: "https://i.ibb.co/Z1XxbQSk/2991.png",
         fullDescription: "Soldadora/Gerador de 1500 rpm refrigerada a água. Melhora o desempenho em ambientes quentes e jornadas prolongadas. Fornece 280A de potência.",
         features: ["Motor Kohler confiável", "Baixo nível de ruído", "Alta durabilidade"]
       },
@@ -256,7 +232,7 @@ export const CATALOG_DATA: ProductCategory[] = [
         id: "motor-toyama-diesel",
         name: "Motor Diesel Toyama TDWE30RE-XP", 
         specs: ["Tipo: Diesel", "Refrigeração: Água", "Partida: Elétrica"],
-        image: "https://images.unsplash.com/photo-1566827068565-37336214878a?q=80&w=1000&auto=format&fit=crop",
+        image: "https://i.ibb.co/7ttmQrGb/01-Motor-TDWE30-RE-XP-025-021-600x600-jpg.webp",
         fullDescription: "Motor estacionário a diesel Toyama, robusto e versátil. Ideal para acoplar em bombas, geradores, barcos e máquinas agrícolas.",
         features: ["Radiador de água", "Tanque de combustível integrado", "Filtro de ar de alta eficiência"]
       },
@@ -264,7 +240,7 @@ export const CATALOG_DATA: ProductCategory[] = [
         id: "reversor-maritimo",
         name: "Reversor Marítimo Kawashima", 
         specs: ["Potência: 45-100 HP", "Redução: 3.04:1", "Tipo: Hidráulico"],
-        image: "https://images.unsplash.com/photo-1565625442598-e7c62c262194?q=80&w=1000&auto=format&fit=crop",
+        image: "https://i.ibb.co/YBXM37zs/reversor-maritimo-hidraulico-kawashima-45-a-100-hp-com-embreagem-multiplas-e-reducao-de-1-97-1-a-3-0.png",
         fullDescription: "Reversor marítimo hidráulico com embreagens múltiplas. Garante trocas suaves e transmissão de potência eficiente para embarcações.",
         features: ["Carcaça resistente à corrosão", "Fácil instalação", "Alta confiabilidade no mar"]
       },
@@ -272,7 +248,7 @@ export const CATALOG_DATA: ProductCategory[] = [
         id: "compressor-tekna",
         name: "Compressor de Ar Tekna CP8525", 
         specs: ["Tanque: 24L", "Potência: 2 HP", "Tensão: Bivolt"],
-        image: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?q=80&w=1000&auto=format&fit=crop",
+        image: "https://i.ibb.co/ZRy4Dhv3/compressor-de-ar-tekna-127-v-ou-220-v-24l-2hp-cp8525-c2-1681-1-f7c2da56ec8e516bc09252c3770a1d28.png",
         fullDescription: "Compressor de ar portátil ideal para pinturas, calibragem e acionamento de ferramentas pneumáticas leves.",
         features: ["Rodas para transporte", "Manômetro de pressão", "Válvula de segurança"]
       }
@@ -282,13 +258,13 @@ export const CATALOG_DATA: ProductCategory[] = [
     id: "agriculture",
     title: "Agricultura",
     description: "Mecanização agrícola with tratores e implementos.",
-    image: "https://images.unsplash.com/photo-1592982537447-6f2a6a0c812d?q=80&w=1000&auto=format&fit=crop",
+    image: "https://i.ibb.co/YFtwnjzW/p202602121420347ff7f.webp",
     items: [
       { 
         id: "microtrator-oleomac",
         name: "Microtrator Oleo-Mac WB65", 
         specs: ["Modelo: WB65 K 1100H", "Uso: Profissional", "Função: Triturador"],
-        image: "https://images.unsplash.com/photo-1595914676579-247942702209?q=80&w=1000&auto=format&fit=crop",
+        image: "https://i.ibb.co/ynVM62y2/triturador-profissonal-oleo-mac-wb65-k-1100h-5274-1-f9cccaa843c25b36fab3b4c0fe85c589.png",
         fullDescription: "Microtrator triturador profissional, ideal para limpeza de terrenos, corte de capim alto e manutenção de pomares.",
         features: ["Lâminas de alta resistência", "Rodas tratoradas", "Guidão ajustável"]
       },
@@ -296,7 +272,7 @@ export const CATALOG_DATA: ProductCategory[] = [
         id: "rocadeira-trator",
         name: "Roçadeira Hidráulica Maqtron RT-1800", 
         specs: ["Corte: 1.8 Metros", "Acoplamento: Trator", "Lâminas: Aço"],
-        image: "https://images.unsplash.com/photo-1628172901509-f9c3c54574ef?q=80&w=1000&auto=format&fit=crop",
+        image: "https://i.ibb.co/GyY2W1j/rocadeira-rt1800-capa.jpg",
         fullDescription: "Roçadeira agrícola para acoplamento em trator. Possui cardan, roda guia e regulagem de altura. Excelente para grandes áreas.",
         features: ["Estrutura reforçada", "Transmissão direta", "Proteção de segurança"]
       },
@@ -304,7 +280,7 @@ export const CATALOG_DATA: ProductCategory[] = [
         id: "debulhador-milho-maqtron",
         name: "Debulhador de Milho Maqtron B-330", 
         specs: ["Acionamento: Polia V", "Alta Produção", "Separação Limpa"],
-        image: "https://images.unsplash.com/photo-1464226184884-fa280b87c399?q=80&w=1000&auto=format&fit=crop",
+        image: "https://i.ibb.co/wZ1SQ7Yb/b-330-para-motor.jpg",
         fullDescription: "Equipamento robusto para debulhar milho com alta eficiência. Separa o grão do sabugo e da palha com rapidez.",
         features: ["Bocal de alimentação amplo", "Saída dupla", "Fácil manutenção"]
       },
@@ -312,7 +288,7 @@ export const CATALOG_DATA: ProductCategory[] = [
         id: "pulverizador-adventure",
         name: "Pulverizador Adventure Flex 200L", 
         specs: ["Tanque: 200 Litros", "Bomba: Elétrica 12V", "Barra: Ajustável"],
-        image: "https://images.unsplash.com/photo-1530507629858-e4977d30e9e0?q=80&w=1000&auto=format&fit=crop",
+        image: "https://i.ibb.co/MxQ9jHgX/hortex.jpg",
         fullDescription: "Pulverizador agrícola de barra para acoplamento em veículos ou tratores pequenos. Ideal para aplicação precisa de defensivos.",
         features: ["Tanque em polietileno", "Bicos anti-gotejo", "Filtro de linha"]
       }
@@ -322,13 +298,13 @@ export const CATALOG_DATA: ProductCategory[] = [
     id: "logistics",
     title: "Logística e Camiões",
     description: "Camiões basculantes e equipamentos de movimentação.",
-    image: "https://images.unsplash.com/photo-1591736632420-1b707449c2d1?q=80&w=1000&auto=format&fit=crop",
+    image: "https://i.ibb.co/d4KB4YNd/IMG-20260406-WA0018.jpg",
     items: [
       { 
         id: "caminhao-basculante-shacman",
         name: "Camião Basculante SHACMAN", 
         specs: ["Rodas: 10 (6x4)", "Capacidade: Alta", "Motor: Potente"],
-        image: "https://images.unsplash.com/photo-1591736632420-1b707449c2d1?q=80&w=1000&auto=format&fit=crop",
+        image: "https://i.ibb.co/CKxcMN8c/IMG-20260406-WA0010.jpg",
         fullDescription: "Camião basculante SHACMAN de 10 rodas, garantindo maior distribuição de peso e estabilidade. Ideal para pedreiras e construção pesada.",
         features: ["Chassi reforçado", "Cabine espaçosa", "Sistema de basculamento rápido"]
       },
@@ -336,7 +312,7 @@ export const CATALOG_DATA: ProductCategory[] = [
         id: "caminhao-jiefang",
         name: "Camião FAW Jiefang J6P", 
         specs: ["Motor: CA6DK2-35E65", "Suspensão: 9/9/10", "Pneus: 11.00R20"],
-        image: "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?q=80&w=1000&auto=format&fit=crop",
+        image: "https://i.ibb.co/XxW59h3h/1ea8279c-d10b-44e3-9826-a1eedf7572d6.jpg",
         fullDescription: "Camião de carga pesada FAW Jiefang, conhecido pela sua economia e durabilidade em longas distâncias.",
         features: ["Motor eficiente", "Eixos robustos", "Baixo custo de manutenção"]
       },
@@ -344,7 +320,7 @@ export const CATALOG_DATA: ProductCategory[] = [
         id: "empilhadeira-cat",
         name: "Empilhadeira Caterpillar", 
         specs: ["Marca: CAT", "Combustível: Diesel/GLP", "Capacidade: Variável"],
-        image: "https://images.unsplash.com/photo-1589792923962-537704632910?q=80&w=1000&auto=format&fit=crop",
+        image: "https://i.ibb.co/HTycZFKS/19272-6992005.webp",
         fullDescription: "Empilhadeira Caterpillar de classe mundial. Sinônimo de força e confiabilidade para movimentação de cargas em armazéns e portos.",
         features: ["Ergonomia superior", "Sistemas de segurança ativos", "Alta valor de revenda"]
       },
@@ -352,7 +328,7 @@ export const CATALOG_DATA: ProductCategory[] = [
         id: "camiao-grua",
         name: "Camião com Grua (Munk)", 
         specs: ["Guindaste: Hidráulico", "Braço: Telescópico", "Estabilizadores: Hidráulicos"],
-        image: "https://images.unsplash.com/photo-1581094288338-2314dddb7ece?q=80&w=1000&auto=format&fit=crop",
+        image: "https://i.ibb.co/BVwKWfrv/45-007.jpg",
         fullDescription: "Camião equipado com grua para auto-carregamento e içamento de cargas. Versatilidade total para logística e construção civil.",
         features: ["Controle preciso", "Capacidade de carga elevada", "Alcance estendido"]
       }

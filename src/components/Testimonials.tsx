@@ -28,8 +28,8 @@ const Testimonials: React.FC = () => {
     <div className="py-12 bg-slate-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-8">
-          <h2 className="text-3xl md:text-4xl font-bold text-sancho-primary mb-4">O que dizem nossos clientes</h2>
-          <p className="text-slate-600 max-w-2xl mx-auto">
+          <h2 className="text-2xl md:text-3xl font-bold text-sancho-primary mb-4">O que dizem nossos clientes</h2>
+          <p className="text-slate-600 max-w-2xl mx-auto text-sm">
             A satisfação dos nossos parceiros é o nosso maior compromisso.
           </p>
         </div>

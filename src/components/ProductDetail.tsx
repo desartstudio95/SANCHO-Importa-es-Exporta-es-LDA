@@ -4,6 +4,7 @@ import { CATALOG_DATA, WHATSAPP_LINK } from '../constants';
 import { Check, MessageCircle, ArrowRight, ShieldCheck, Ruler, Truck, FileText } from 'lucide-react';
 import LazyImage from './LazyImage';
 import BackButton from './BackButton';
+import SEO from './SEO';
 
 const ProductDetail: React.FC = () => {
   const { id } = useParams<{ id: string }>();
@@ -52,6 +53,13 @@ const ProductDetail: React.FC = () => {
 
   return (
     <div className="bg-slate-50 min-h-screen pt-24 pb-16">
+      <SEO 
+        title={product.name}
+        description={`Detalhes técnicos e especificações do ${product.name}. Equipamento de alta qualidade disponível na SANCHO Trading.`}
+        keywords={`${product.name}, ${category?.title}, máquinas pesadas Moçambique`}
+        canonical={`https://www.sanchotrading.com/produto/${id}`}
+        image={product.image}
+      />
       {/* Breadcrumbs & Back Button */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-8 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
         <nav className="flex items-center text-sm text-slate-500 gap-2 animate-fade-in-up">

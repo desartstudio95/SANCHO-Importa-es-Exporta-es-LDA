@@ -30,30 +30,19 @@ const Hero: React.FC = () => {
             Soluções completas em Máquinas, Equipamentos Industriais e Logística
           </h2>
 
-          <p className="text-sm sm:text-base text-slate-200 mb-10 leading-relaxed max-w-2xl mx-auto font-normal opacity-90 px-4">
+          <p className="text-xs sm:text-sm text-slate-200 mb-10 leading-relaxed max-w-2xl mx-auto font-normal opacity-90 px-4">
             {HERO_CONTENT.subtitle}
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center w-full max-w-sm mx-auto sm:max-w-none">
             {/* Accent Color Button */}
             <Link 
-              to="/cotacao" 
+              to="/simular-cotacao" 
               className="w-full sm:w-auto px-6 py-3 bg-sancho-accent hover:bg-sancho-accent-hover text-white font-bold text-base rounded-full shadow-lg transition-all duration-300 transform hover:-translate-y-1 hover:shadow-xl min-w-[180px] flex items-center justify-center gap-2"
             >
               <Calculator size={18} />
               Simular Cotação
             </Link>
-            
-            {/* White/Transparent Button */}
-            <a 
-              href={WHATSAPP_LINK}
-              target="_blank"
-              rel="noreferrer"
-              className="w-full sm:w-auto px-6 py-3 bg-white/10 backdrop-blur-sm border border-white/40 hover:bg-white/20 text-white font-bold text-base rounded-full shadow-lg transition-all duration-300 transform hover:-translate-y-1 hover:shadow-xl flex items-center justify-center gap-2 min-w-[180px]"
-            >
-              <MessageCircle size={18} />
-              Falar no WhatsApp
-            </a>
           </div>
         </div>
       </div>

@@ -37,11 +37,6 @@ const Footer: React.FC = () => {
           {/* 1. Brand Section */}
           <div className="space-y-6">
             <Link to="/" className="flex flex-col group items-start">
-               <img 
-                 src="https://images.unsplash.com/photo-1768678009011-d46a8c133788?q=80&w=580&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                 alt="SANCHO Logo" 
-                 className="h-12 w-auto object-contain mb-2"
-               />
                <div className="flex flex-col">
                   <span className="font-extrabold text-2xl uppercase tracking-tight leading-none text-white">
                     SANCHO
@@ -60,9 +55,6 @@ const Footer: React.FC = () => {
               </a>
               <a href="#" className="w-10 h-10 rounded-full bg-white/5 hover:bg-sancho-accent flex items-center justify-center transition-all hover:-translate-y-1">
                 <Instagram size={18} />
-              </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-white/5 hover:bg-sancho-accent flex items-center justify-center transition-all hover:-translate-y-1">
-                <Linkedin size={18} />
               </a>
             </div>
           </div>
