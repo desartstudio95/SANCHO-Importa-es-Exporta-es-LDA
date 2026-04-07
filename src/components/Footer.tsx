@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { COMPANY_NAME, NAV_LINKS, WHATSAPP_LINK, PHONE_1, EMAIL, ADDRESS } from '../constants';
+import { COMPANY_NAME, NAV_LINKS, WHATSAPP_LINK, PHONE_1, EMAIL, ADDRESS, INSTAGRAM_LINK, FACEBOOK_LINK } from '../constants';
 import { Facebook, Instagram, Linkedin, Mail, Phone, MapPin, ArrowRight, Shield } from 'lucide-react';
 
 const Footer: React.FC = () => {
@@ -50,10 +50,10 @@ const Footer: React.FC = () => {
               Líderes em importação e exportação de máquinas pesadas e soluções logísticas em Moçambique. Conectando o seu negócio ao mundo com confiança e eficiência.
             </p>
             <div className="flex gap-4">
-              <a href="#" className="w-10 h-10 rounded-full bg-white/5 hover:bg-sancho-accent flex items-center justify-center transition-all hover:-translate-y-1">
+              <a href={FACEBOOK_LINK} target="_blank" rel="noreferrer" className="w-10 h-10 rounded-full bg-white/5 hover:bg-sancho-accent flex items-center justify-center transition-all hover:-translate-y-1">
                 <Facebook size={18} />
               </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-white/5 hover:bg-sancho-accent flex items-center justify-center transition-all hover:-translate-y-1">
+              <a href={INSTAGRAM_LINK} target="_blank" rel="noreferrer" className="w-10 h-10 rounded-full bg-white/5 hover:bg-sancho-accent flex items-center justify-center transition-all hover:-translate-y-1">
                 <Instagram size={18} />
               </a>
             </div>

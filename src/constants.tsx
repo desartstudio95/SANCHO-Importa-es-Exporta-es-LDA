@@ -8,6 +8,8 @@ export const WHATSAPP_LINK = "https://wa.link/vbzehq";
 export const EMAIL = "info@sanchotrading.com";
 export const ADDRESS = "Cidade de Maputo, Bairro Alto Maé, Avenida Eduardo Mondlane N°3112 1°Andar";
 export const GOOGLE_MAPS_LINK = "https://www.google.com/maps/search/?api=1&query=Cidade+de+Maputo+Bairro+Alto+Maé+Avenida+Eduardo+Mondlane+3112";
+export const INSTAGRAM_LINK = "https://www.instagram.com/sanchoimportacoeslda?igsh=Znpvamh3am5jaHE1";
+export const FACEBOOK_LINK = "https://www.facebook.com/share/1Bnadac2uK/";
 
 export const FAQ_ITEMS = [
   {
@@ -95,7 +97,7 @@ export const DETAILED_SERVICES_PAGE = [
   {
     title: "Consultoria Técnica Especializada",
     description: "Equipe especializada para auxiliar na escolha dos equipamentos ideais para suas necessidades específicas e projetos.",
-    image: "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&q=80&w=1000",
+    image: "https://i.ibb.co/3mX6jKnt/consultoria-importacao-06.webp",
     icon: <Headset size={28} />,
     features: [
       "Análise de necessidades",
@@ -251,6 +253,14 @@ export const CATALOG_DATA: ProductCategory[] = [
         image: "https://i.ibb.co/ZRy4Dhv3/compressor-de-ar-tekna-127-v-ou-220-v-24l-2hp-cp8525-c2-1681-1-f7c2da56ec8e516bc09252c3770a1d28.png",
         fullDescription: "Compressor de ar portátil ideal para pinturas, calibragem e acionamento de ferramentas pneumáticas leves.",
         features: ["Rodas para transporte", "Manômetro de pressão", "Válvula de segurança"]
+      },
+      { 
+        id: "motor-toyota-d4d",
+        name: "Motor Toyota D-4D", 
+        specs: ["Tipo: Diesel", "Injeção: Common Rail", "Uso: Veicular/Industrial"],
+        image: "https://i.ibb.co/Fq3J4ncD/IMG-20260406-WA0005.jpg",
+        fullDescription: "Motor Toyota D-4D de alta performance, conhecido pela sua durabilidade e economia de combustível. Ideal para reposição em veículos comerciais ou aplicações industriais estacionárias.",
+        features: ["Tecnologia Common Rail", "Baixa emissão", "Alta confiabilidade Toyota"]
       }
     ]
   },

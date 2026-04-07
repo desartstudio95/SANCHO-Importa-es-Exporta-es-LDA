@@ -38,6 +38,7 @@ const SIMULATION_EQUIPMENT = [
   { id: 'motor-toyama-diesel', name: 'Motor Diesel Toyama TDWE30RE-XP', price: 120000, weight: 180, category: 'industrial' },
   { id: 'reversor-maritimo', name: 'Reversor Marítimo Kawashima', price: 180000, weight: 120, category: 'industrial' },
   { id: 'compressor-tekna', name: 'Compressor de Ar Tekna CP8525', price: 45000, weight: 24, category: 'industrial' },
+  { id: 'motor-toyota-d4d', name: 'Motor Toyota D-4D', price: 250000, weight: 250, category: 'industrial' },
   
   // Agriculture
   { id: 'microtrator-oleomac', name: 'Microtrator Oleo-Mac WB65', price: 120000, weight: 150, category: 'agriculture' },
@@ -146,9 +147,9 @@ const QuoteSimulator: React.FC = () => {
           <motion.div 
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="inline-flex items-center gap-2 bg-sancho-primary text-white px-6 py-2 rounded-full font-bold text-sm mb-6 shadow-lg border-2 border-sancho-yellow"
+            className="inline-flex items-center gap-2 bg-sancho-primary text-white px-4 py-1.5 rounded-full font-bold text-xs mb-6 shadow-lg border-2 border-sancho-yellow"
           >
-            <Calculator size={18} className="text-sancho-yellow" />
+            <Calculator size={14} className="text-sancho-yellow" />
             Simulador de Importação Moçambique
           </motion.div>
           <h1 className="text-3xl md:text-5xl font-extrabold text-sancho-primary mb-4 tracking-tight">
@@ -357,7 +358,7 @@ const QuoteSimulator: React.FC = () => {
                   <div className="mt-12 flex justify-end">
                     <button
                       onClick={handleNext}
-                      className="bg-sancho-accent text-white px-12 py-4 rounded-2xl font-bold text-base hover:bg-sancho-accent-hover transition-all shadow-xl shadow-sancho-accent/30 flex items-center gap-3"
+                      className="bg-sancho-accent text-white px-12 py-4 rounded-2xl font-bold text-sm hover:bg-sancho-accent-hover transition-all shadow-xl shadow-sancho-accent/30 flex items-center gap-3"
                     >
                       Gerar Cotação Real
                       <ArrowRight size={20} />
@@ -401,38 +402,38 @@ const QuoteSimulator: React.FC = () => {
                       
                       {/* Left: Base Costs */}
                       <div>
-                        <h3 className="text-sm font-black text-sancho-primary uppercase tracking-widest mb-6 flex items-center gap-2">
-                          <DollarSign size={16} className="text-sancho-accent" /> Custos de Origem & Logística
+                        <h3 className="text-[11px] font-black text-sancho-primary uppercase tracking-widest mb-6 flex items-center gap-2">
+                          <DollarSign size={14} className="text-sancho-accent" /> Custos de Origem & Logística
                         </h3>
                         <div className="space-y-4">
                           <div className="flex justify-between items-center py-2 border-b border-slate-50">
-                            <span className="text-slate-500 text-sm">Valor FOB ({quantity} un)</span>
-                            <span className="font-bold text-slate-700">{calculation.fob.toLocaleString('pt-MZ')} MZN</span>
+                            <span className="text-slate-500 text-xs">Valor FOB ({quantity} un)</span>
+                            <span className="font-bold text-slate-700 text-sm">{calculation.fob.toLocaleString('pt-MZ')} MZN</span>
                           </div>
                           <div className="flex justify-between items-center py-2 border-b border-slate-50">
-                            <span className="text-slate-500 text-sm">Frete Internacional ({freightType === 'sea' ? 'Marítimo' : 'Aéreo'})</span>
-                            <span className="font-bold text-slate-700">{calculation.freight.toLocaleString('pt-MZ')} MZN</span>
+                            <span className="text-slate-500 text-xs">Frete Internacional ({freightType === 'sea' ? 'Marítimo' : 'Aéreo'})</span>
+                            <span className="font-bold text-slate-700 text-sm">{calculation.freight.toLocaleString('pt-MZ')} MZN</span>
                           </div>
                           <div className="flex justify-between items-center py-2 border-b border-slate-50">
-                            <span className="text-slate-500 text-sm">Seguro de Carga (0.75%)</span>
-                            <span className="font-bold text-slate-700">{calculation.insurance.toLocaleString('pt-MZ')} MZN</span>
+                            <span className="text-slate-500 text-xs">Seguro de Carga (0.75%)</span>
+                            <span className="font-bold text-slate-700 text-sm">{calculation.insurance.toLocaleString('pt-MZ')} MZN</span>
                           </div>
                           <div className="flex justify-between items-center py-4 px-4 bg-slate-50 rounded-xl mt-4">
-                            <span className="font-black text-sancho-primary text-sm">VALOR CIF (Base Aduaneira)</span>
-                            <span className="font-black text-sancho-primary">{calculation.cif.toLocaleString('pt-MZ')} MZN</span>
+                            <span className="font-black text-sancho-primary text-xs">VALOR CIF (Base Aduaneira)</span>
+                            <span className="font-black text-sancho-primary text-sm">{calculation.cif.toLocaleString('pt-MZ')} MZN</span>
                           </div>
                         </div>
                       </div>
 
                       {/* Right: Taxes */}
                       <div>
-                        <h3 className="text-sm font-black text-sancho-primary uppercase tracking-widest mb-6 flex items-center gap-2">
-                          <Info size={16} className="text-sancho-accent" /> Taxas & Impostos (Moçambique)
+                        <h3 className="text-[11px] font-black text-sancho-primary uppercase tracking-widest mb-6 flex items-center gap-2">
+                          <Info size={14} className="text-sancho-accent" /> Taxas & Impostos (Moçambique)
                         </h3>
                         <div className="space-y-4">
                           <div className="flex justify-between items-center py-2 border-b border-slate-50">
                             <div className="flex items-center gap-2">
-                              <span className="text-slate-500 text-sm">Direitos Aduaneiros (II)</span>
+                              <span className="text-slate-500 text-xs">Direitos Aduaneiros (II)</span>
                               <div className="group relative">
                                 <Info size={12} className="text-slate-300 cursor-help" />
                                 <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-48 p-2 bg-slate-800 text-white text-[10px] rounded shadow-xl opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity z-50">
@@ -440,19 +441,19 @@ const QuoteSimulator: React.FC = () => {
                                 </div>
                               </div>
                             </div>
-                            <span className="font-bold text-red-500">+{calculation.duties.toLocaleString('pt-MZ')} MZN</span>
+                            <span className="font-bold text-red-500 text-sm">+{calculation.duties.toLocaleString('pt-MZ')} MZN</span>
                           </div>
                           <div className="flex justify-between items-center py-2 border-b border-slate-50">
-                            <span className="text-slate-500 text-sm">IVA (16%)</span>
-                            <span className="font-bold text-red-500">+{calculation.vat.toLocaleString('pt-MZ')} MZN</span>
+                            <span className="text-slate-500 text-xs">IVA (16%)</span>
+                            <span className="font-bold text-red-500 text-sm">+{calculation.vat.toLocaleString('pt-MZ')} MZN</span>
                           </div>
                           <div className="flex justify-between items-center py-2 border-b border-slate-50">
-                            <span className="text-slate-500 text-sm">Taxas Portuárias & Kudumba</span>
-                            <span className="font-bold text-red-500">+{calculation.mcnet.toLocaleString('pt-MZ')} MZN</span>
+                            <span className="text-slate-500 text-xs">Taxas Portuárias & Kudumba</span>
+                            <span className="font-bold text-red-500 text-sm">+{calculation.mcnet.toLocaleString('pt-MZ')} MZN</span>
                           </div>
                           <div className="flex justify-between items-center py-4 px-4 bg-red-50 rounded-xl mt-4 border border-red-100">
-                            <span className="font-black text-red-700 text-sm">TOTAL DE IMPOSTOS</span>
-                            <span className="font-black text-red-700">{calculation.totalTaxes.toLocaleString('pt-MZ')} MZN</span>
+                            <span className="font-black text-red-700 text-xs">TOTAL DE IMPOSTOS</span>
+                            <span className="font-black text-red-700 text-sm">{calculation.totalTaxes.toLocaleString('pt-MZ')} MZN</span>
                           </div>
                         </div>
                       </div>
@@ -488,7 +489,7 @@ Gostaria de receber uma cotação oficial.`;
                           const encodedMessage = encodeURIComponent(message);
                           window.open(`https://wa.me/258874228160?text=${encodedMessage}`, '_blank');
                         }}
-                        className="flex-grow bg-green-500 text-white py-5 rounded-2xl font-bold text-lg hover:bg-green-600 transition-all flex items-center justify-center gap-4 shadow-xl shadow-green-500/30 transform hover:-translate-y-1"
+                        className="flex-grow bg-green-500 text-white py-5 rounded-2xl font-bold text-base hover:bg-green-600 transition-all flex items-center justify-center gap-4 shadow-xl shadow-green-500/30 transform hover:-translate-y-1"
                       >
                         <MessageCircle size={24} className="fill-current" />
                         Finalizar Cotação no WhatsApp

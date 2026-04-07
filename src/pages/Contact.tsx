@@ -15,10 +15,10 @@ const Contact: React.FC = () => {
       />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-20">
-          <h1 className="text-4xl md:text-6xl font-extrabold text-sancho-primary mb-6 tracking-tight">
+          <h1 className="text-3xl md:text-5xl font-extrabold text-sancho-primary mb-6 tracking-tight">
             Entre em Contacto Connosco
           </h1>
-          <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-lg text-slate-600 max-w-3xl mx-auto leading-relaxed">
             Estamos aqui para responder às suas perguntas e ajudá-lo a encontrar as melhores soluções para o seu negócio.
           </p>
         </div>
@@ -27,14 +27,14 @@ const Contact: React.FC = () => {
           {/* Contact Info */}
           <div className="lg:col-span-5 space-y-10">
             <div className="bg-white p-10 rounded-[2.5rem] shadow-xl border border-slate-100">
-              <h2 className="text-2xl font-bold text-sancho-primary mb-8">Informações de Contacto</h2>
+              <h2 className="text-xl font-bold text-sancho-primary mb-8">Informações de Contacto</h2>
               <div className="space-y-8">
                 <div className="flex items-start gap-5 group">
                   <div className="bg-sancho-accent/10 p-4 rounded-2xl text-sancho-accent group-hover:bg-sancho-accent group-hover:text-white transition-all">
                     <MapPin size={24} />
                   </div>
                   <div>
-                    <h3 className="font-bold text-sancho-primary text-lg mb-1">Nossa Localização</h3>
+                    <h3 className="font-bold text-sancho-primary text-base mb-1">Nossa Localização</h3>
                     <p className="text-slate-500 leading-relaxed">{ADDRESS}</p>
                     <a 
                       href={GOOGLE_MAPS_LINK} 
@@ -52,7 +52,7 @@ const Contact: React.FC = () => {
                     <Phone size={24} />
                   </div>
                   <div>
-                    <h3 className="font-bold text-sancho-primary text-lg mb-1">Telefone</h3>
+                    <h3 className="font-bold text-sancho-primary text-base mb-1">Telefone</h3>
                     <p className="text-slate-500 leading-relaxed">{PHONE_1}</p>
                     <p className="text-slate-400 text-sm mt-1">Atendimento de Seg. a Sex. das 08:00 às 17:00</p>
                   </div>
@@ -63,7 +63,7 @@ const Contact: React.FC = () => {
                     <Mail size={24} />
                   </div>
                   <div>
-                    <h3 className="font-bold text-sancho-primary text-lg mb-1">E-mail</h3>
+                    <h3 className="font-bold text-sancho-primary text-base mb-1">E-mail</h3>
                     <p className="text-slate-500 leading-relaxed">{EMAIL}</p>
                     <p className="text-slate-400 text-sm mt-1">Respondemos em até 24 horas úteis</p>
                   </div>
@@ -74,7 +74,7 @@ const Contact: React.FC = () => {
                     <Clock size={24} />
                   </div>
                   <div>
-                    <h3 className="font-bold text-sancho-primary text-lg mb-1">Horário de Funcionamento</h3>
+                    <h3 className="font-bold text-sancho-primary text-base mb-1">Horário de Funcionamento</h3>
                     <p className="text-slate-500 leading-relaxed">Segunda a Sexta: 08:00 - 17:00</p>
                     <p className="text-slate-500 leading-relaxed">Sábado: 08:00 - 12:00</p>
                   </div>
@@ -88,7 +88,7 @@ const Contact: React.FC = () => {
               <div className="relative z-10">
                 <div className="flex items-center gap-4 mb-6">
                   <MessageCircle size={40} className="fill-current" />
-                  <h3 className="text-2xl font-bold">Atendimento Rápido</h3>
+                  <h3 className="text-xl font-bold">Atendimento Rápido</h3>
                 </div>
                 <p className="text-green-500 bg-white px-4 py-2 rounded-full inline-block font-bold text-sm mb-6 shadow-lg">
                   Online Agora

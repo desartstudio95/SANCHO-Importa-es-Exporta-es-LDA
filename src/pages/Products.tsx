@@ -102,7 +102,7 @@ const Products: React.FC = () => {
                 <div className="mt-12 flex justify-center">
                   <button 
                     onClick={() => handleShowMore(category.id)}
-                    className="px-8 py-3 bg-white border-2 border-sancho-primary text-sancho-primary font-bold rounded-xl hover:bg-sancho-primary hover:text-white transition-all shadow-lg shadow-sancho-primary/10 flex items-center gap-2"
+                    className="px-6 py-2 bg-white border-2 border-sancho-primary text-sancho-primary font-bold rounded-xl hover:bg-sancho-primary hover:text-white transition-all shadow-lg shadow-sancho-primary/10 flex items-center gap-2 text-sm"
                   >
                     Ver Mais {category.title}
                   </button>

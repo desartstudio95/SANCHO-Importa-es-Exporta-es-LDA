@@ -83,13 +83,13 @@ const About: React.FC = () => {
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ delay: idx * 0.1 }}
                 viewport={{ once: true }}
-                className="bg-white p-8 rounded-3xl shadow-lg border border-slate-100 hover:border-sancho-accent transition-all text-center group"
+                className="bg-white p-6 rounded-3xl shadow-lg border border-slate-100 hover:border-sancho-accent transition-all text-center group"
               >
-                <div className="bg-slate-50 w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-sancho-accent/10 transition-colors">
+                <div className="bg-slate-50 w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-sancho-accent/10 transition-colors">
                   {value.icon}
                 </div>
-                <h3 className="text-xl font-bold text-sancho-primary mb-3">{value.title}</h3>
-                <p className="text-slate-500 text-sm">{value.description}</p>
+                <h3 className="text-lg font-bold text-sancho-primary mb-3">{value.title}</h3>
+                <p className="text-slate-500 text-xs">{value.description}</p>
               </motion.div>
             ))}
           </div>
@@ -101,15 +101,15 @@ const About: React.FC = () => {
             <h2 className="text-2xl font-bold text-sancho-primary mb-4">Como Trabalhamos</h2>
             <p className="text-slate-500 text-sm">Nosso processo é desenhado para sua total tranquilidade e segurança.</p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6">
             {WORK_PROCESS.map((step, idx) => (
               <div key={idx} className="relative group">
-                <div className="bg-white p-8 rounded-3xl shadow-sm h-full border border-transparent hover:border-sancho-accent transition-all">
-                  <span className="text-4xl font-black text-slate-100 absolute top-4 right-4 group-hover:text-sancho-accent/10 transition-colors">
+                <div className="bg-white p-6 rounded-3xl shadow-sm h-full border border-transparent hover:border-sancho-accent transition-all">
+                  <span className="text-3xl font-black text-slate-100 absolute top-4 right-4 group-hover:text-sancho-accent/10 transition-colors">
                     {step.number}
                   </span>
-                  <h3 className="text-lg font-bold text-sancho-primary mb-3 relative z-10">{step.title}</h3>
-                  <p className="text-slate-500 text-xs relative z-10 leading-relaxed">{step.desc}</p>
+                  <h3 className="text-base font-bold text-sancho-primary mb-3 relative z-10">{step.title}</h3>
+                  <p className="text-slate-500 text-[10px] relative z-10 leading-relaxed">{step.desc}</p>
                 </div>
                 {idx < WORK_PROCESS.length - 1 && (
                   <div className="hidden lg:block absolute top-1/2 -right-4 transform -translate-y-1/2 z-20 text-sancho-accent">
