@@ -10,7 +10,7 @@ const Home: React.FC = () => {
   return (
     <main>
       <SEO 
-        title="Importação, Exportação e Logística em Moçambique"
+        title="Importação e Logística em Moçambique"
         description="A SANCHO é líder em importação e exportação de máquinas pesadas, equipamentos industriais e soluções logísticas em Moçambique. Conheça nossos serviços."
         keywords="importação, exportação, máquinas pesadas, logística Moçambique, equipamentos industriais"
       />
