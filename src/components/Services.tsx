@@ -26,11 +26,12 @@ const Services: React.FC = () => {
   return (
     <section id="services" className="py-10 md:py-12 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-8 opacity-0 translate-y-8 animate-on-scroll">
+        <div className="text-center mb-12 opacity-0 translate-y-8 animate-on-scroll">
           <span className="bg-sancho-accent/10 text-sancho-accent px-4 py-1.5 rounded-full text-[10px] font-bold uppercase tracking-wider">Nossos Serviços</span>
-          <h2 className="text-xl md:text-2xl font-extrabold text-sancho-primary mt-4 mb-3">O Que Fazemos</h2>
-          <p className="mt-2 text-slate-500 max-w-2xl mx-auto text-xs md:text-sm">
-            Soluções completas para todas as suas necessidades em equipamentos e logística
+          <h2 className="text-xl md:text-2xl lg:text-3xl font-extrabold text-sancho-primary mt-4 mb-4">Soluções de Importação e Logística Integrada</h2>
+          <p className="mt-4 text-slate-600 max-w-3xl mx-auto text-sm md:text-base leading-relaxed">
+            Oferecemos um ecossistema completo para facilitar a entrada de capital fixo e equipamentos industriais em Moçambique. 
+            Desde a consultoria técnica na origem até o desembaraço aduaneiro e entrega final, garantimos eficiência e conformidade legal em cada etapa.
           </p>
         </div>
 

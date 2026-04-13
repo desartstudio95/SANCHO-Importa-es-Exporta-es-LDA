@@ -27,11 +27,12 @@ const Products: React.FC = () => {
       />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h1 className="text-3xl md:text-4xl font-extrabold text-sancho-primary mb-4">
-            Nosso Catálogo de Produtos
+          <h1 className="text-2xl md:text-3xl lg:text-4xl font-extrabold text-sancho-primary mb-6 tracking-tight">
+            Catálogo de Máquinas e Equipamentos Industriais
           </h1>
-          <p className="text-base text-slate-600 max-w-2xl mx-auto">
-            Oferecemos as melhores soluções em máquinas pesadas, equipamentos industriais e agrícolas das marcas mais renomadas do mundo.
+          <p className="text-base md:text-lg text-slate-600 max-w-3xl mx-auto leading-relaxed">
+            A SANCHO é o seu elo de confiança com os maiores fabricantes globais. Oferecemos uma selecção premium de máquinas pesadas para construção, 
+            soluções de mecanização agrícola e equipamentos industriais de alta performance, todos com suporte técnico especializado em Moçambique.
           </p>
         </div>
 
@@ -46,7 +47,7 @@ const Products: React.FC = () => {
                   <Package size={32} />
                 </div>
                 <div>
-                  <h2 className="text-2xl font-bold text-sancho-primary">{category.title}</h2>
+                  <h2 className="text-xl font-bold text-sancho-primary">{category.title}</h2>
                   <p className="text-slate-500 text-sm">{category.description}</p>
                 </div>
               </div>
@@ -73,7 +74,7 @@ const Products: React.FC = () => {
                       </div>
                     </div>
                     <div className="p-6">
-                      <h3 className="text-lg font-bold text-sancho-primary mb-3 group-hover:text-sancho-accent transition-colors">
+                      <h3 className="text-base font-bold text-sancho-primary mb-3 group-hover:text-sancho-accent transition-colors">
                         {item.name}
                       </h3>
                       <div className="space-y-2 mb-6">

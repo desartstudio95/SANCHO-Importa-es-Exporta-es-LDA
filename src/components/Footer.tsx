@@ -38,7 +38,7 @@ const Footer: React.FC = () => {
           <div className="space-y-6">
             <Link to="/" className="flex flex-col group items-start">
                <div className="flex flex-col">
-                  <span className="font-extrabold text-2xl uppercase tracking-tight leading-none text-white">
+                  <span className="font-extrabold text-xl uppercase tracking-tight leading-none text-white">
                     SANCHO
                   </span>
                   <span className="text-[0.65rem] font-bold tracking-[0.2em] text-sancho-accent uppercase mt-1">
@@ -61,7 +61,7 @@ const Footer: React.FC = () => {
 
           {/* 2. Quick Links */}
           <div>
-            <h3 className="text-white font-bold text-lg mb-6 flex items-center gap-2">
+            <h3 className="text-white font-bold text-base mb-6 flex items-center gap-2">
               Navegação
               <span className="w-12 h-0.5 bg-sancho-accent block"></span>
             </h3>
@@ -81,7 +81,7 @@ const Footer: React.FC = () => {
 
           {/* 3. Contact Info */}
           <div>
-             <h3 className="text-white font-bold text-lg mb-6 flex items-center gap-2">
+             <h3 className="text-white font-bold text-base mb-6 flex items-center gap-2">
               Contactos
               <span className="w-12 h-0.5 bg-sancho-accent block"></span>
             </h3>
@@ -105,7 +105,7 @@ const Footer: React.FC = () => {
 
           {/* 4. CTA */}
           <div>
-            <h3 className="text-white font-bold text-lg mb-6 flex items-center gap-2">
+            <h3 className="text-white font-bold text-base mb-6 flex items-center gap-2">
               Atendimento
               <span className="w-12 h-0.5 bg-sancho-accent block"></span>
             </h3>
@@ -122,6 +122,28 @@ const Footer: React.FC = () => {
             </a>
           </div>
 
+        </div>
+
+        {/* SEO Keywords Section */}
+        <div className="border-t border-white/5 py-8 mt-8">
+          <h4 className="text-white font-bold text-sm mb-4 uppercase tracking-widest opacity-50">Especialidades em Moçambique</h4>
+          <div className="flex flex-wrap gap-x-6 gap-y-2 text-[10px] md:text-xs text-blue-300/60 uppercase font-medium">
+            <span>Importação de Máquinas Pesadas</span>
+            <span className="w-1 h-1 bg-white/20 rounded-full self-center"></span>
+            <span>Logística DDP Maputo</span>
+            <span className="w-1 h-1 bg-white/20 rounded-full self-center"></span>
+            <span>Equipamentos Industriais SANY</span>
+            <span className="w-1 h-1 bg-white/20 rounded-full self-center"></span>
+            <span>Tratores Agrícolas</span>
+            <span className="w-1 h-1 bg-white/20 rounded-full self-center"></span>
+            <span>Geradores de Energia</span>
+            <span className="w-1 h-1 bg-white/20 rounded-full self-center"></span>
+            <span>Desembaraço Aduaneiro</span>
+            <span className="w-1 h-1 bg-white/20 rounded-full self-center"></span>
+            <span>Exportação Moçambique</span>
+            <span className="w-1 h-1 bg-white/20 rounded-full self-center"></span>
+            <span>Camiões Basculantes</span>
+          </div>
         </div>
 
         {/* Bottom Bar */}

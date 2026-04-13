@@ -8,10 +8,13 @@ const Portfolio: React.FC = () => {
   return (
     <div className="py-12 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-8">
-          <h2 className="text-2xl md:text-3xl font-bold text-sancho-primary mb-4">Nosso Portfólio de Produtos</h2>
-          <p className="text-slate-600 max-w-2xl mx-auto text-sm">
-            Conheça as categorias de equipamentos e máquinas que importamos para impulsionar o seu negócio.
+        <div className="text-center mb-12">
+          <h2 className="text-2xl md:text-3xl font-extrabold text-sancho-primary mb-4 tracking-tight">Nosso Portfólio de Máquinas e Equipamentos</h2>
+          <div className="w-20 h-1.5 bg-sancho-accent mx-auto mb-6"></div>
+          <p className="text-slate-600 max-w-3xl mx-auto text-lg leading-relaxed">
+            Explore a nossa selecção rigorosa de máquinas pesadas, equipamentos industriais e soluções agrícolas. 
+            Trabalhamos com os melhores fabricantes globais para garantir que o seu projecto em Moçambique 
+            tenha acesso à tecnologia mais avançada e duradoura do mercado.
           </p>
         </div>
 
@@ -32,7 +35,7 @@ const Portfolio: React.FC = () => {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-sancho-primary/90 via-sancho-primary/40 to-transparent"></div>
               <div className="absolute bottom-0 left-0 p-8 w-full">
-                <h3 className="text-xl font-bold text-white mb-2">{category.title}</h3>
+                <h3 className="text-lg font-bold text-white mb-2">{category.title}</h3>
                 <p className="text-blue-100 text-xs mb-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   {category.description}
                 </p>

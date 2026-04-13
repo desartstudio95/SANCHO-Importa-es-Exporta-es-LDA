@@ -31,7 +31,7 @@ const Contact: React.FC = () => {
           
           {/* Contact Info */}
           <div>
-            <h2 className="text-2xl md:text-3xl font-bold text-sancho-primary mb-6">Entre em Contacto</h2>
+            <h2 className="text-xl md:text-2xl font-bold text-sancho-primary mb-6">Entre em Contacto</h2>
             <p className="text-slate-600 mb-6 leading-relaxed text-sm">
               Estamos prontos para ajudar o seu negócio a crescer. Fale connosco para cotações, consultoria técnica ou suporte.
             </p>

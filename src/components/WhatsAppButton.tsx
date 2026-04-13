@@ -1,15 +1,20 @@
 import React from 'react';
 import { MessageCircle } from 'lucide-react';
 import { WHATSAPP_LINK } from '../constants';
+import { motion } from 'motion/react';
 
 const WhatsAppButton: React.FC = () => {
   return (
     <div className="fixed bottom-6 right-6 z-50 flex flex-col items-end gap-2">
-      <a
+      <motion.a
         href={WHATSAPP_LINK}
         target="_blank"
         rel="noopener noreferrer"
-        className="relative bg-green-500 text-white p-4 rounded-full shadow-2xl hover:bg-green-600 transition-all duration-500 hover:scale-110 flex items-center justify-center group overflow-hidden"
+        initial={{ scale: 0, opacity: 0 }}
+        animate={{ scale: 1, opacity: 1 }}
+        whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 0.9 }}
+        className="relative bg-green-500 text-white p-4 rounded-full shadow-2xl hover:bg-green-600 transition-all duration-500 flex items-center justify-center group overflow-hidden"
         aria-label="Contactar via WhatsApp"
       >
         {/* Pulse effect */}
@@ -21,7 +26,7 @@ const WhatsAppButton: React.FC = () => {
         <span className="absolute right-full mr-4 bg-white text-slate-900 px-4 py-2 rounded-xl shadow-xl opacity-0 group-hover:opacity-100 transition-all duration-300 translate-x-4 group-hover:translate-x-0 whitespace-nowrap font-bold pointer-events-none border border-slate-100">
           Fale Connosco! 👋
         </span>
-      </a>
+      </motion.a>
     </div>
   );
 };

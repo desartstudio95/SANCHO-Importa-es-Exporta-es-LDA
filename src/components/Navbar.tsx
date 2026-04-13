@@ -56,7 +56,7 @@ const Navbar: React.FC = () => {
               referrerPolicy="no-referrer"
             />
             <div className="flex flex-col justify-center">
-              <span className={`font-extrabold text-base md:text-lg lg:text-xl uppercase tracking-tight leading-none text-sancho-primary`}>
+              <span className={`font-extrabold text-sm md:text-base lg:text-lg uppercase tracking-tight leading-none text-sancho-primary`}>
                 SANCHO
               </span>
               <span className={`text-[0.55rem] md:text-[0.6rem] font-bold tracking-[0.15em] text-sancho-accent uppercase`}>

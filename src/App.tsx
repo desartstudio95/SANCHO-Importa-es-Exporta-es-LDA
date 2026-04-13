@@ -5,6 +5,7 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
 import WhatsAppButton from './components/WhatsAppButton';
+import GoogleAnalytics from './components/GoogleAnalytics';
 
 // Lazy load pages
 const Home = lazy(() => import('./pages/Home'));
@@ -18,6 +19,7 @@ const ProductDetail = lazy(() => import('./components/ProductDetail'));
 const App: React.FC = () => {
   return (
     <HelmetProvider>
+      <GoogleAnalytics />
       <div className="min-h-screen bg-slate-50 selection:bg-sancho-accent selection:text-white overflow-x-hidden w-full">
         <Navbar />
         

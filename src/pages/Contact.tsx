@@ -15,7 +15,7 @@ const Contact: React.FC = () => {
       />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-20">
-          <h1 className="text-3xl md:text-5xl font-extrabold text-sancho-primary mb-6 tracking-tight">
+          <h1 className="text-2xl md:text-4xl font-extrabold text-sancho-primary mb-6 tracking-tight">
             Entre em Contacto Connosco
           </h1>
           <p className="text-lg text-slate-600 max-w-3xl mx-auto leading-relaxed">
@@ -27,14 +27,14 @@ const Contact: React.FC = () => {
           {/* Contact Info */}
           <div className="lg:col-span-5 space-y-10">
             <div className="bg-white p-10 rounded-[2.5rem] shadow-xl border border-slate-100">
-              <h2 className="text-xl font-bold text-sancho-primary mb-8">Informações de Contacto</h2>
+              <h2 className="text-lg font-bold text-sancho-primary mb-8">Informações de Contacto</h2>
               <div className="space-y-8">
                 <div className="flex items-start gap-5 group">
                   <div className="bg-sancho-accent/10 p-4 rounded-2xl text-sancho-accent group-hover:bg-sancho-accent group-hover:text-white transition-all">
                     <MapPin size={24} />
                   </div>
                   <div>
-                    <h3 className="font-bold text-sancho-primary text-base mb-1">Nossa Localização</h3>
+                    <h3 className="font-bold text-sancho-primary text-sm mb-1">Nossa Localização</h3>
                     <p className="text-slate-500 leading-relaxed">{ADDRESS}</p>
                     <a 
                       href={GOOGLE_MAPS_LINK} 
@@ -52,7 +52,7 @@ const Contact: React.FC = () => {
                     <Phone size={24} />
                   </div>
                   <div>
-                    <h3 className="font-bold text-sancho-primary text-base mb-1">Telefone</h3>
+                    <h3 className="font-bold text-sancho-primary text-sm mb-1">Telefone</h3>
                     <p className="text-slate-500 leading-relaxed">{PHONE_1}</p>
                     <p className="text-slate-400 text-sm mt-1">Atendimento de Seg. a Sex. das 08:00 às 17:00</p>
                   </div>
@@ -63,7 +63,7 @@ const Contact: React.FC = () => {
                     <Mail size={24} />
                   </div>
                   <div>
-                    <h3 className="font-bold text-sancho-primary text-base mb-1">E-mail</h3>
+                    <h3 className="font-bold text-sancho-primary text-sm mb-1">E-mail</h3>
                     <p className="text-slate-500 leading-relaxed">{EMAIL}</p>
                     <p className="text-slate-400 text-sm mt-1">Respondemos em até 24 horas úteis</p>
                   </div>
@@ -74,7 +74,7 @@ const Contact: React.FC = () => {
                     <Clock size={24} />
                   </div>
                   <div>
-                    <h3 className="font-bold text-sancho-primary text-base mb-1">Horário de Funcionamento</h3>
+                    <h3 className="font-bold text-sancho-primary text-sm mb-1">Horário de Funcionamento</h3>
                     <p className="text-slate-500 leading-relaxed">Segunda a Sexta: 08:00 - 17:00</p>
                     <p className="text-slate-500 leading-relaxed">Sábado: 08:00 - 12:00</p>
                   </div>
@@ -88,7 +88,7 @@ const Contact: React.FC = () => {
               <div className="relative z-10">
                 <div className="flex items-center gap-4 mb-6">
                   <MessageCircle size={40} className="fill-current" />
-                  <h3 className="text-xl font-bold">Atendimento Rápido</h3>
+                  <h3 className="text-lg font-bold">Atendimento Rápido</h3>
                 </div>
                 <p className="text-green-500 bg-white px-4 py-2 rounded-full inline-block font-bold text-sm mb-6 shadow-lg">
                   Online Agora
@@ -106,7 +106,7 @@ const Contact: React.FC = () => {
           {/* Contact Form */}
           <div className="lg:col-span-7">
             <div className="bg-white p-10 md:p-16 rounded-[2.5rem] shadow-xl border border-slate-100 h-full">
-              <h2 className="text-3xl font-bold text-sancho-primary mb-10">Envie-nos uma Mensagem</h2>
+              <h2 className="text-2xl font-bold text-sancho-primary mb-10">Envie-nos uma Mensagem</h2>
               <form className="space-y-8">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                   <div className="space-y-2">
@@ -161,6 +161,32 @@ const Contact: React.FC = () => {
                   <Send size={20} className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
                 </button>
               </form>
+            </div>
+          </div>
+        </div>
+
+        {/* FAQ Section */}
+        <div className="mt-24">
+          <div className="text-center mb-16">
+            <h2 className="text-xl md:text-2xl font-bold text-sancho-primary mb-4">Perguntas Frequentes</h2>
+            <p className="text-slate-500">Esclareça suas dúvidas rápidas sobre nossos serviços de importação e logística.</p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            <div className="bg-white p-8 rounded-3xl border border-slate-100 shadow-sm">
+              <h4 className="font-bold text-sancho-primary mb-3">Como funciona o serviço DDP?</h4>
+              <p className="text-sm text-slate-500 leading-relaxed">O serviço Delivered Duty Paid (DDP) significa que a SANCHO assume toda a responsabilidade pelo transporte, taxas de importação e desembaraço aduaneiro, entregando o produto diretamente no seu local de escolha em Moçambique.</p>
+            </div>
+            <div className="bg-white p-8 rounded-3xl border border-slate-100 shadow-sm">
+              <h4 className="font-bold text-sancho-primary mb-3">Quais marcas de máquinas vocês fornecem?</h4>
+              <p className="text-sm text-slate-500 leading-relaxed">Somos parceiros de marcas líderes globais como SANY, SDLG, Menegotti e Toyama, garantindo equipamentos de alta performance com garantia e suporte técnico.</p>
+            </div>
+            <div className="bg-white p-8 rounded-3xl border border-slate-100 shadow-sm">
+              <h4 className="font-bold text-sancho-primary mb-3">Qual o prazo médio de entrega?</h4>
+              <p className="text-sm text-slate-500 leading-relaxed">Os prazos variam conforme a origem do equipamento e a modalidade de frete escolhida. Geralmente, para equipamentos em stock regional, a entrega é feita em poucos dias úteis.</p>
+            </div>
+            <div className="bg-white p-8 rounded-3xl border border-slate-100 shadow-sm">
+              <h4 className="font-bold text-sancho-primary mb-3">Vocês oferecem assistência técnica?</h4>
+              <p className="text-sm text-slate-500 leading-relaxed">Sim, possuímos uma rede de suporte técnico para auxiliar na manutenção preventiva e corretiva dos equipamentos fornecidos pela SANCHO em todo o território nacional.</p>
             </div>
           </div>
         </div>

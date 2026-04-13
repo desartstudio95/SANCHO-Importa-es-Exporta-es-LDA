@@ -152,12 +152,21 @@ const QuoteSimulator: React.FC = () => {
             <Calculator size={14} className="text-sancho-yellow" />
             Simulador de Importação Moçambique
           </motion.div>
-          <h1 className="text-3xl md:text-5xl font-extrabold text-sancho-primary mb-4 tracking-tight">
+          <h1 className="text-2xl md:text-4xl font-extrabold text-sancho-primary mb-4 tracking-tight">
             Cotação Inteligente <span className="text-sancho-accent">SANCHO</span>
           </h1>
-          <p className="text-slate-600 max-w-2xl mx-auto text-sm md:text-base">
+          <p className="text-slate-600 max-w-2xl mx-auto text-sm md:text-base mb-8">
             Calcule instantaneamente o custo real de importação, incluindo frete, seguros e todas as taxas alfandegárias vigentes em Moçambique.
           </p>
+          
+          <div className="max-w-3xl mx-auto text-xs text-slate-500 leading-relaxed bg-white/50 p-4 rounded-2xl border border-slate-100">
+            <p>
+              O nosso simulador de importação foi desenvolvido para oferecer transparência total aos empresários e gestores em Moçambique. 
+              Ao importar máquinas pesadas ou equipamentos industriais, é crucial entender a composição do custo DDP (Delivered Duty Paid). 
+              Esta ferramenta considera o valor FOB, estimativas de frete internacional, seguro de carga e a pauta aduaneira moçambicana, 
+              incluindo Direitos Aduaneiros, IVA e taxas portuárias.
+            </p>
+          </div>
         </div>
 
         {/* Stepper */}
@@ -207,7 +216,7 @@ const QuoteSimulator: React.FC = () => {
                       <Package size={24} />
                     </div>
                     <div>
-                      <h2 className="text-xl font-bold text-sancho-primary">O que pretende importar?</h2>
+                      <h2 className="text-lg font-bold text-sancho-primary">O que pretende importar?</h2>
                       <p className="text-xs text-slate-500">Selecione o equipamento do nosso catálogo oficial</p>
                     </div>
                   </div>
@@ -279,7 +288,7 @@ const QuoteSimulator: React.FC = () => {
                         <Truck size={24} />
                       </div>
                       <div>
-                        <h2 className="text-xl font-bold text-sancho-primary">Configuração de Envio</h2>
+                        <h2 className="text-lg font-bold text-sancho-primary">Configuração de Envio</h2>
                         <p className="text-xs text-slate-500">Defina a quantidade e o método de transporte</p>
                       </div>
                     </div>
@@ -381,7 +390,7 @@ const QuoteSimulator: React.FC = () => {
                     <div className="relative z-10 flex flex-col md:flex-row justify-between items-center gap-8">
                       <div className="text-center md:text-left">
                         <span className="text-sancho-accent font-bold text-[8px] uppercase tracking-[0.2em] mb-2 block">Estimativa de Custo Real (DDP)</span>
-                        <h2 className="text-xl md:text-2xl font-black mb-2">{selectedItem?.name}</h2>
+                        <h2 className="text-lg md:text-xl font-black mb-2">{selectedItem?.name}</h2>
                         <div className="flex items-center gap-2 text-slate-300 text-xs justify-center md:justify-start">
                           <Globe size={14} />
                           <span>Entregue em Moçambique com impostos pagos</span>
@@ -483,7 +492,7 @@ Resumo da Cotação:
 - CIF: ${calculation.cif.toLocaleString('pt-MZ')} MZN
 - Impostos: ${calculation.totalTaxes.toLocaleString('pt-MZ')} MZN
 
-VALOR TOTAL ESTIMADO: ${calculation.total.toLocaleString('pt-MZ')} MZN
+VALOR TOTAL ESTIMADO: ${calculation.grandTotal.toLocaleString('pt-MZ')} MZN
 
 Gostaria de receber uma cotação oficial.`;
                           const encodedMessage = encodeURIComponent(message);
@@ -514,7 +523,7 @@ Gostaria de receber uma cotação oficial.`;
             {isCalculating && (
               <div className="absolute inset-0 bg-white/90 backdrop-blur-sm z-50 flex flex-col items-center justify-center">
                 <div className="w-20 h-20 border-4 border-slate-100 border-t-sancho-accent rounded-full animate-spin mb-6"></div>
-                <h3 className="text-xl font-bold text-sancho-primary animate-pulse">Calculando Taxas Aduaneiras...</h3>
+                <h3 className="text-lg font-bold text-sancho-primary animate-pulse">Calculando Taxas Aduaneiras...</h3>
                 <p className="text-slate-500 text-sm mt-2">Consultando pauta de Moçambique 2024</p>
               </div>
             )}
