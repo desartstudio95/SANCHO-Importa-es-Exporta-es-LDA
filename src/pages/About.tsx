@@ -27,8 +27,12 @@ const About: React.FC = () => {
       >
         <div className="absolute inset-0 opacity-10">
           <img 
-            src="https://images.unsplash.com/photo-1581094288338-2314dddb7ece?auto=format&fit=crop&q=80&w=2000" 
-            alt="Background" 
+            src="https://images.unsplash.com/photo-1581094288338-2314dddb7ece?auto=format&fit=crop&format=webp&q=80&w=1600" 
+            alt="Fábrica e Logística Industrial SANCHO" 
+            width="1600"
+            height="900"
+            loading="lazy"
+            decoding="async"
             className="w-full h-full object-cover"
           />
         </div>
@@ -58,6 +62,10 @@ const About: React.FC = () => {
               <img 
                 src="https://i.ibb.co/tpL7j0LC/images-1.jpg" 
                 alt="Equipa SANCHO em Moçambique" 
+                width="600"
+                height="600"
+                loading="lazy"
+                decoding="async"
                 className="w-full h-full object-cover"
               />
             </div>

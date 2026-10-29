@@ -51,7 +51,9 @@ const Navbar: React.FC = () => {
           <Link to="/" className="flex-shrink-0 flex items-center gap-2 md:gap-3 cursor-pointer group">
             <img 
               src="https://i.ibb.co/hRZhFPK4/DESART-LOGOTIPO-4.png" 
-              alt="SANCHO Logo" 
+              alt="SANCHO Logo - Importações & Exportações LDA" 
+              width="56"
+              height="56"
               className="w-10 h-10 md:w-14 md:h-14 object-cover rounded-xl group-hover:opacity-90 transition-opacity"
               referrerPolicy="no-referrer"
             />

@@ -31,6 +31,11 @@ const Portfolio: React.FC = () => {
               <img 
                 src={category.image} 
                 alt={category.title}
+                width="800"
+                height="500"
+                loading="lazy"
+                decoding="async"
+                referrerPolicy="no-referrer"
                 className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-sancho-primary/90 via-sancho-primary/40 to-transparent"></div>

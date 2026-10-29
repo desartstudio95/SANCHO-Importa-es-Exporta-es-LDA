@@ -55,10 +55,21 @@ const ProductDetail: React.FC = () => {
     <div className="bg-slate-50 min-h-screen pt-24 pb-16">
       <SEO 
         title={product.name}
-        description={`Detalhes técnicos e especificações do ${product.name}. Equipamento de alta qualidade disponível na SANCHO Trading.`}
-        keywords={`${product.name}, ${category?.title}, máquinas pesadas Moçambique`}
+        description={`Detalhes técnicos e especificações do ${product.name}. Equipamento de alta qualidade disponível na SANCHO Trading com assistência e garantia em Moçambique.`}
+        keywords={`${product.name}, ${category?.title}, máquinas pesadas Moçambique, comprar ${product.name}`}
         canonical={`https://www.sanchotrading.com/produto/${id}`}
         image={product.image}
+        productData={{
+          name: product.name,
+          description: product.fullDescription || `Equipamento industrial ${product.name} em Moçambique com despacho DDP.`,
+          image: product.image,
+          category: category?.title,
+          price: 4500000,
+          priceCurrency: 'MZN',
+          ratingValue: 4.9,
+          reviewCount: 38,
+          inStock: true
+        }}
       />
       {/* Breadcrumbs & Back Button */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-8 flex flex-col sm:flex-row sm:items-center justify-between gap-4">

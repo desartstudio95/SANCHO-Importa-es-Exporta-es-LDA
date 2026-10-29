@@ -9,8 +9,13 @@ const Hero: React.FC = () => {
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <img 
-          src="https://plus.unsplash.com/premium_photo-1661933302016-2946d0b15650?auto=format&fit=crop&w=1200&q=80"
-          alt="Porto e Logística SANCHO - Importações e Exportações" 
+          src="https://plus.unsplash.com/premium_photo-1661933302016-2946d0b15650?auto=format&fit=crop&format=webp&w=1600&q=80"
+          alt="Porto e Logística SANCHO - Importações e Exportações de Máquinas em Moçambique" 
+          width="1600"
+          height="900"
+          loading="eager"
+          fetchPriority="high"
+          decoding="async"
           className="w-full h-full object-cover"
         />
         {/* Navy Overlay to match logo palette */}

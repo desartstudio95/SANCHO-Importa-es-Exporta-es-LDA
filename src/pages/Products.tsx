@@ -62,17 +62,21 @@ const Products: React.FC = () => {
                     viewport={{ once: true }}
                     className="bg-white rounded-2xl overflow-hidden shadow-lg border border-slate-100 hover:shadow-2xl transition-all group"
                   >
-                    <div className="h-64 overflow-hidden relative">
+                    <Link to={`/produto/${item.id}`} className="block h-64 overflow-hidden relative cursor-pointer">
                       <img
                         src={item.image}
                         alt={item.name}
+                        width="600"
+                        height="400"
+                        loading="lazy"
+                        decoding="async"
                         referrerPolicy="no-referrer"
                         className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                       />
-                      <div className="absolute top-4 right-4 bg-sancho-accent text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">
+                      <div className="absolute top-4 right-4 bg-sancho-accent text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider shadow-md">
                         Disponível
                       </div>
-                    </div>
+                    </Link>
                     <div className="p-6">
                       <h3 className="text-base font-bold text-sancho-primary mb-3 group-hover:text-sancho-accent transition-colors">
                         {item.name}
